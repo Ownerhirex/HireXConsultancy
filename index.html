@@ -385,15 +385,21 @@
 
 .testimonial-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:24px;
 }
 
 .testimonial{
-  background:var(--stone);
+  background:white;
   padding:24px;
   border-radius:8px;
   border:1px solid var(--line);
+  transition:0.3s;
+}
+
+.testimonial:hover{
+  transform:translateY(-5px);
+  border-color:var(--brass);
 }
 
 .testimonial p{
@@ -869,8 +875,8 @@ color:var(--slate);
 
     <div class="section-head">
       <div class="section-tag">Client Testimonials</div>
-      <h2>What our clients say</h2>
-      <p>Trusted by companies across multiple industries.</p>
+      <h2>What Our Clients Say</h2>
+      <p>Trusted by companies across multiple industries across India.</p>
     </div>
 
     <div class="testimonial-grid">
@@ -882,51 +888,41 @@ color:var(--slate);
       </div>
 
       <div class="testimonial">
-        <p>"We struggled for weeks to find experienced Relationship Managers. HireX delivered quality candidates quickly."</p>
+        <p>"We struggled for weeks to find experienced Relationship Managers. HireX delivered quality candidates quickly and professionally."</p>
         <h4>Rahul Shah</h4>
         <span>Regional Manager, Housing Finance Company</span>
       </div>
 
       <div class="testimonial">
-        <p>"Professional, transparent and efficient. Their team stayed involved throughout the hiring process."</p>
+        <p>"Professional, transparent and efficient. Their team stayed involved throughout the hiring process and ensured a smooth closure."</p>
         <h4>Neha Desai</h4>
         <span>Head HR, Logistics Company</span>
       </div>
 
-    </div>
-<section class="testimonials">
-  <div class="wrap">
-
-    <div class="section-head">
-      <div class="section-tag">Why Companies Choose HireX</div>
-      <h2>Trusted recruitment partner across India</h2>
-    </div>
-
-    <div class="testimonial-grid">
-
       <div class="testimonial">
-        <h4>⚡ Fast Shortlisting</h4>
-        <p>Most clients receive their first shortlist within 48–72 hours.</p>
+        <p>"Excellent communication and quick turnaround. We hired two operations managers through HireX within three weeks."</p>
+        <h4>Karan Mehta</h4>
+        <span>Operations Head, Manufacturing Company</span>
       </div>
 
       <div class="testimonial">
-        <h4>🎯 Pre-Screened Candidates</h4>
-        <p>Every candidate is evaluated before being shared with clients.</p>
+        <p>"Their understanding of the BFSI sector helped us find candidates who were productive from day one. Highly recommended."</p>
+        <h4>Priya Patel</h4>
+        <span>HR Manager, Financial Services Firm</span>
       </div>
 
       <div class="testimonial">
-        <h4>🤝 Dedicated Consultant</h4>
-        <p>One point of contact throughout the hiring process.</p>
+        <p>"HireX Consultancy understood our hiring requirements immediately and shared quality profiles within days. The process was smooth and hassle-free."</p>
+        <h4>Vikas Sharma</h4>
+        <span>General Manager, Retail Chain</span>
       </div>
 
-    </div>
+      <div class="testimonial">
+        <p>"We were hiring across multiple locations in Gujarat and HireX helped us close positions faster than any agency we had worked with before."</p>
+        <h4>Sneha Joshi</h4>
+        <span>Talent Acquisition Lead, Healthcare Group</span>
+      </div>
 
-  </div>
-</section>
-
-  </div>
-</section>
-  </div>
 </section>
   <!-- ─── ABOUT / FOUNDER ─── -->
   <section id="about">
