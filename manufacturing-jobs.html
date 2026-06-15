@@ -1,1 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manufacturing Recruitment Consultancy in India | ManuX Consultancy</title>
+<meta name="description" content="ManuX Consultancy specializes in manufacturing industry recruitment across India.">
+<meta property="og:title" content="Manufacturing Recruitment Consultancy in India | ManuX Consultancy">
+<meta property="og:description" content="ManuX Consultancy connects manufacturing companies, factories, industrial plants, and production businesses with engineers, production managers, quality control specialists, operations leaders, and manufacturing technicians.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0F172A">
 
+//fonts.googleapis.com">
+//fonts.gstatic.com" crossorigin>
+//fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root,[data-theme="light"]{
+    --bg:#F5F7F4;
+    --surface:#FCFDFB;
+    --surface-2:#E8EEE6;
+    --text:#0F172A;
+    --muted:#5B687A;
+    --line:rgba(15,23,42,0.12);
+    --primary:#2F6B3A;
+    --primary-2:#89A94E;
+    --accent:#B68A3A;
+    --hero:#111827;
+    --hero-text:#F8FAFC;
+    --hero-muted:#CBD5E1;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(15,23,42,0.08);
+  }
+
+  [data-theme="dark"]{
+    --bg:#0B1220;
+    --surface:#121A2B;
+    --surface-2:#182235;
+    --text:#E5E7EB;
+    --muted:#9CA3AF;
+    --line:rgba(229,231,235,0.12);
+    --primary:#76B07F;
+    --primary-2:#A8C66C;
+    --accent:#D8B26A;
+    --hero:#060B14;
+    --hero-text:#F8FAFC;
+    --hero-muted:#CBD5E1;
+    --shadow:0 10px 30px rgba(0,0,0,0.35);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+  }
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .sr-only{position:absolute;left:-9999px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .skip-link{position:absolute;left:-9999px;top:auto}
+  .skip-link:focus{left:16px;top:16px;background:var(--accent);color:#111;padding:10px 14px;border-radius:999px;z-index:1000}
+
+  .theme-toggle{
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--text);
+    width:44px;height:44px;border-radius:999px;display:grid;place-items:center;
+  }
+
+  header{
+    position:sticky;top:0;z-index:40;
+    backdrop-filter:blur(14px);
+    background:color-mix(in srgb, var(--bg) 86%, transparent);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .logo-mark{width:40px;height:40px;color:var(--primary)}
+  .brand-text{display:flex;flex-direction:column;line-height:1.1}
+  .brand-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.08rem}
+  .brand-sub{font-size:.78rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  nav a{text-decoration:none;font-size:.95rem;color:var(--muted);font-weight:600}
+  nav a:hover{color:var(--text)}
+
+  .hero{
+    background:radial-gradient(circle at top right, rgba(182,138,58,.16), transparent 28%), linear-gradient(180deg, var(--hero) 0%, #0B1320 100%);
+    color:var(--hero-text);
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:88px 0 72px;
+  }
+  .eyebrow{
+    display:inline-block;margin-bottom:16px;color:var(--accent);font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08;margin:0}
+  h1{font-size:clamp(2.6rem,5vw,4.8rem);margin-bottom:22px;max-width:11ch}
+  h1 em{font-style:italic;font-weight:300;color:#BEDC87}
+  .hero p{margin:0 0 30px;color:var(--hero-muted);max-width:58ch;font-size:1.03rem}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 24px;border-radius:999px;
+    text-decoration:none;font-weight:700;font-size:.95rem;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--accent);color:#111827}
+  .btn-primary:hover{background:#d9b16a}
+  .btn-secondary{border-color:rgba(248,250,252,.2);color:var(--hero-text)}
+  .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+  .hero-notes{display:flex;gap:18px;flex-wrap:wrap;color:#D6DCE6;font-size:.9rem}
+  .hero-card{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:28px;box-shadow:var(--shadow)
+  }
+  .hero-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .hero-panel{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px
+  }
+  .hero-panel small{display:block;color:#C8D1DD;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;margin-bottom:6px}
+  .hero-panel strong{font-size:1.02rem}
+  .process-line{display:flex;gap:10px;align-items:center;margin-top:18px;color:#D9E2EC;font-size:.92rem}
+  .process-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(182,138,58,.14)}
+
+  section{padding:84px 0}
+  .section-head{margin-bottom:42px}
+  .section-tag{font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--primary);margin-bottom:10px}
+  h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:14px}
+  .section-head p{max-width:64ch;color:var(--muted);font-size:1.02rem}
+
+  .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  .about-copy p{color:var(--muted);margin:0 0 18px}
+  .stats{display:grid;gap:14px}
+  .stat-card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:22px 24px;box-shadow:var(--shadow)}
+  .stat-card strong{display:block;font-family:'Fraunces',serif;font-size:1.7rem;margin-bottom:4px}
+  .stat-card span{color:var(--muted);font-size:.96rem}
+
+  .specialties{background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .specialty-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .specialty-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;min-height:180px}
+  .specialty-card h3{font-size:1.15rem;margin-bottom:10px}
+  .specialty-card p{margin:0;color:var(--muted);font-size:.95rem}
+
+  .listing-table{border-top:1px solid var(--line)}
+  .listing{
+    display:grid;grid-template-columns:64px 1.4fr 1fr 1fr 110px;gap:18px;align-items:center;
+    padding:22px 18px;border-bottom:1px solid var(--line);text-decoration:none;background:transparent;
+  }
+  .listing:hover{background:color-mix(in srgb, var(--primary) 8%, transparent)}
+  .id{font-family:'Fraunces',serif;color:var(--primary);font-weight:700}
+  .role-name{font-weight:700;font-size:1.04rem}
+  .role-desc{display:block;color:var(--muted);font-size:.88rem;margin-top:4px}
+  .meta{font-size:.9rem;color:var(--text)}
+  .meta-label{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .view{text-align:right;font-weight:700;white-space:nowrap}
+
+  .process-list{display:grid;gap:0;border-top:1px solid var(--line)}
+  .process-item{display:grid;grid-template-columns:86px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
+  .step{font-family:'Fraunces',serif;font-size:1.7rem;color:var(--accent)}
+  .process-item h3{font-size:1.14rem;margin-bottom:6px}
+  .process-item p{margin:0;color:var(--muted)}
+
+  .cta{background:var(--hero);color:var(--hero-text);text-align:center}
+  .cta h2{color:var(--hero-text)}
+  .cta p{max-width:60ch;margin:0 auto 28px;color:var(--hero-muted)}
+  .footer{padding:30px 0;background:var(--hero);color:#A8B3C2;border-top:1px solid rgba(255,255,255,.08)}
+  .footer-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+  .footer a{color:#D8B26A;text-decoration:none}
+
+  @media (max-width:980px){
+    .hero-grid,.about-grid,.specialty-grid{grid-template-columns:1fr}
+    nav{display:none}
+  }
+
+  @media (max-width:760px){
+    .hero-grid{padding:68px 0 56px;gap:26px}
+    section{padding:68px 0}
+    .listing{grid-template-columns:1fr;gap:8px}
+    .view{text-align:left}
+    .process-item{grid-template-columns:1fr;gap:10px}
+    .hero-card-grid{grid-template-columns:1fr}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+  }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header>
+  <div class="wrap header-row">
+    <a class="brand" href="https://www.manuxconsultant.com" target="_blank" rel="noopener noreferrer" aria-label="ManuX Consultancy home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="8" y="10" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2.4"></rect>
+        <rect x="28" y="10" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2.4"></rect>
+        <rect x="8" y="30" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2.4"></rect>
+        <rect x="28" y="30" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2.4"></rect>
+        <path d="M14 22L20 28L14 34" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M20 10V8C20 6.89543 21.1046 6 22.2222 6H33.7778C34.8954 6 36 6.89543 36 8V10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+        <path d="M12 10V8C12 6.89543 13.1046 6 14.2222 6H17.7778C18.8954 6 20 6.89543 20 8V10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+        ircle cx="14" cy="42" r="2" stroke="currentColor" stroke-width="2"></circle>
+        ircle cx="34" cy="42" r="2" stroke="currentColor" stroke-width="2"></circle>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">ManuX Consultancy</span>
+        <span class="brand-sub">Manufacturing Hiring</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#specialties">Coverage</a>
+      <a href="#roles">Roles</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Manufacturing Hiring · Pan-India</span>
+        <h1>We hire the teams behind <em>product excellence</em></h1>
+        <p>ManuX Consultancy connects manufacturing companies, factories, industrial plants, automotive businesses, and production organizations with engineers, production managers, quality control specialists, operations leaders, and manufacturing technicians built for precision, efficiency, and operational excellence.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#roles">View open roles</a>
+          <a class="btn btn-secondary" href="#contact">Talk to a recruiter</a>
+        </div>
+        <div class="hero-notes">
+          <span>Technical & operational screening</span>
+          <span>Factory-to-plant mandates</span>
+          <span>Pan-India coverage across all states</span>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Key hiring focus areas">
+        <h2 style="font-size:1.6rem;margin-bottom:8px;color:var(--hero-text)">Built for manufacturing-critical roles</h2>
+        <p style="margin:0;color:var(--hero-muted)">From production engineering and quality control to operations management and technical leadership, every shortlist is aligned to facility type, production volume, quality standards, team structure, and manufacturing environment.</p>
+        <div class="hero-card-grid">
+          <div class="hero-panel">
+            <small>Company Type</small>
+            <strong>Manufacturing firms, factories, plants, automotive, industrial</strong>
+          </div>
+          <div class="hero-panel">
+            <small>Focus</small>
+            <strong>Engineering, Production, Quality, Operations, Technical</strong>
+          </div>
+          <div class="hero-panel">
+            <small>Coverage</small>
+            <strong>Pan-India · All states & union territories</strong>
+          </div>
+          <div class="hero-panel">
+            <small>Delivery</small>
+            <strong>Technical screening, operational assessment, shortlist and interview coordination</strong>
+          </div>
+        </div>
+        <div class="process-line"><span class="process-dot"></span><span>Hiring calibrated to technical needs, production requirements, quality standards, and manufacturing realities</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="section-tag">About ManuX</div>
+        <h2>Recruitment shaped by production goals, role fit and quality</h2>
+        <p>Manufacturing hiring is not only about filling vacancies. It is about matching the right professional to the right production environment, team culture, role expectations, quality standards, and performance requirements.</p>
+        <p>We screen candidates for technical expertise, hands-on experience, role clarity, production readiness, team leadership, and communication with cross-functional stakeholders across engineering, production, and operations functions.</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card"><strong>5 core tracks</strong><span>Engineering, Production, Quality Control, Operations, and Technical hiring</span></div>
+        <div class="stat-card"><strong>Pan-India</strong><span>Coverage across all manufacturing hubs across India</span></div>
+        <div class="stat-card"><strong>End-to-end</strong><span>Technical sourcing, screening, shortlist delivery and coordination support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialties" id="specialties">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">Manufacturing Coverage</div>
+        <h2>Where we recruit most often</h2>
+        <p>Our search work spans manufacturing companies, factories, industrial operations and functions that support precision, efficiency, quality, and cost optimization.</p>
+      </div>
+      <div class="specialty-grid">
+        <article class="specialty-card">
+          <h3>Large Manufacturing Enterprises</h3>
+          <p>Large manufacturing firms, MNC industrial companies, established production businesses with structured operations and multi-line manufacturing.</p>
+        </article>
+        <article class="specialty-card">
+          <h3>Mid-sized Factories & Plants</h3>
+          <p>Growing factories, production plants, industrial facilities with flexible structures and execution focus.</p>
+        </article>
+        <article class="specialty-card">
+          <h3>Automotive & Engineering</h3>
+          <p>Automotive manufacturers, engineering companies, precision manufacturing businesses with quality focus and technical excellence.</p>
+        </article>
+        <article class="specialty-card">
+          <h3>Manufacturing Functions</h3>
+          <p>Engineering, Production, Quality Control, Operations Management, and technical leadership hiring across all business types.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="roles">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">Roles We Recruit</div>
+        <h2>Open mandates across manufacturing operations</h2>
+        <p>From production execution to leadership, these are the roles we support most frequently.</p>
+      </div>
+      <div class="listing-table">
+        <a class="listing" href="#contact">
+          <span class="id">01</span>
+          <span>
+            <span class="role-name">Production Manager / Supervisor</span>
+            <span class="role-desc">Manages production lines, oversees manufacturing processes, coordinates staff, and ensures output targets</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Production Operations</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid–Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">02</span>
+          <span>
+            <span class="role-name">Manufacturing Engineer</span>
+            <span class="role-desc">Designs production processes, optimizes manufacturing systems, implements efficiency improvements, and supports technical operations</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Engineering</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid–Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">03</span>
+          <span>
+            <span class="role-name">Quality Control Manager / Inspector</span>
+            <span class="role-desc">Ensures product quality, conducts quality inspections, implements quality standards, and manages compliance</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Quality Control</span>
+          <span class="meta"><span class="meta-label">Level</span>Entry–Mid</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">04</span>
+          <span>
+            <span class="role-name">Operations Manager</span>
+            <span class="role-desc">Drives operational efficiency, process optimization, resource management, and manufacturing execution</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Operations</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid–Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">05</span>
+          <span>
+            <span class="role-name">Maintenance Technician / Engineer</span>
+            <span class="role-desc">Maintains machinery, performs equipment repairs, conducts preventive maintenance, and ensures production uptime</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Maintenance & Technical</span>
+          <span class="meta"><span class="meta-label">Level</span>Entry–Mid</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">06</span>
+          <span>
+            <span class="role-name">Plant Manager / CEO</span>
+            <span class="role-desc">Leads manufacturing strategy, people management, cross-functional performance, and production business growth</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Leadership</span>
+          <span class="meta"><span class="meta-label">Level</span>Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">How We Work</div>
+        <h2>From brief to candidate shortlist</h2>
+        <p>A focused hiring process designed for roles where technical fit matters as much as designation.</p>
+      </div>
+      <div class="process-list">
+        <div class="process-item">
+          <span class="step">01</span>
+          <div>
+            <h3>Understand the production context</h3>
+            <p>We map the role to facility type, production volume, quality standards, reporting structure, technical exposure, and hiring urgency.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">02</span>
+          <div>
+            <h3>Screen for technical and cultural fit</h3>
+            <p>We assess technical expertise, hands-on experience, role clarity, production readiness, communication, and team-handling capability.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">03</span>
+          <div>
+            <h3>Deliver a practical shortlist</h3>
+            <p>You receive vetted candidates aligned to role criticality, location, compensation band, and technical realities, ready for interview movement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="cta" id="contact">
+    <div class="wrap">
+      <div class="section-tag" style="color:var(--accent)">Contact</div>
+      <h2>Hiring for manufacturing operations?</h2>
+      <p>Share the role, location and function, and ManuX Consultancy can respond with candidates suited to your factory, plant, project or manufacturing hiring need across Pan-India.</p>
+      <a class="btn btn-primary" href="https://wa.me/918200438098" target="_blank" rel="noopener noreferrer">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span>©️ 2026 ManuX Consultancy. Manufacturing recruitment across Pan-India.</span>
+    <a href="https://www.manuxconsultant.com" target="_blank" rel="noopener noreferrer">Back to ManuX Home</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const toggle=document.querySelector('[data-theme-toggle]');
+  const root=document.documentElement;
+  let theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  root.setAttribute('data-theme',theme);
+  const render=()=>{
+    toggle.textContent=theme==='dark'?'☼':'◐';
+    toggle.setAttribute('aria-label',theme==='dark'?'Switch to light mode':'Switch to dark mode');
+  };
+  render();
+  toggle.addEventListener('click',()=>{
+    theme=theme==='dark'?'light':'dark';
+    root.setAttribute('data-theme',theme);
+    render();
+  });
+})();
+</script>
+</body>
+</html>
