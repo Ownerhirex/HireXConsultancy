@@ -1,0 +1,1 @@
+User-agent: * Allow: / Sitemap: https://ownerhirex.github.io/HireXConsultancy/sitemap.xml
