@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>HireX Consultancy | Building Teams , Building Futures</title>
+<title>HireX Consultancy | Building Teams, Building Futures</title>
 <meta name="description" content="HireX Consultancy connects ambitious companies with exceptional talent. Executive search, permanent staffing, and contract recruitment solutions tailored to your industry." />
 <meta name="keywords" content="recruitment consultancy, HireX Consultancy, executive search, staffing agency, hiring experts, job placement, talent acquisition" />
 <meta name="robots" content="index, follow" />
@@ -40,9 +40,7 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'Inter', sans-serif;
     background: var(--ivory);
@@ -50,395 +48,307 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
-
   a { color: inherit; text-decoration: none; }
-
-  h1, h2, h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-
+  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: -0.01em; }
   .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 
+  /* HEADER */
   header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(247, 244, 237, 0.92);
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(247,249,252,0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--line);
   }
   .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 24px;
-    max-width: 1180px;
-    margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 24px; max-width: 1180px; margin: 0 auto;
   }
-  .logo {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    letter-spacing: -0.02em;
-  }
-  .logo span { color: var(--brass); }
-  .nav-links {
-    display: flex;
-    gap: 32px;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-  .nav-links a {
-    position: relative;
-    padding: 4px 0;
-    transition: color 0.2s;
-  }
+  .logo img { height: 80px; vertical-align: middle; display: block; }
+  .nav-links { display: flex; gap: 32px; font-size: 0.95rem; font-weight: 500; }
+  .nav-links a { position: relative; padding: 4px 0; transition: color 0.2s; }
   .nav-links a:hover { color: var(--brass); }
-  .nav-links a:focus-visible {
-    outline: 2px solid var(--brass);
-    outline-offset: 4px;
-    border-radius: 2px;
-  }
+  .nav-links a:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 2px; }
   .nav-cta {
-    background: var(--navy);
-    color: var(--ivory);
-    padding: 10px 22px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: background 0.2s;
+    background: var(--navy); color: var(--ivory);
+    padding: 10px 22px; border-radius: 4px;
+    font-size: 0.9rem; font-weight: 600; transition: background 0.2s;
   }
-  .nav-cta:hover { background: var(--brass); color: var(--navy); }
+  .nav-cta:hover { background: var(--brass); color: white; }
 
-  .menu-toggle { display: none; }
+  /* MOBILE MENU */
+  .menu-toggle {
+    display: none; flex-direction: column; gap: 5px;
+    cursor: pointer; background: none; border: none; padding: 6px; z-index: 60;
+  }
+  .menu-toggle span {
+    display: block; width: 24px; height: 2px;
+    background: var(--navy); border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle.open span:nth-child(2) { opacity: 0; }
+  .menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-nav {
+    display: none; flex-direction: column; gap: 0;
+    background: white; border-top: 1px solid var(--line); padding: 8px 0 16px;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    padding: 14px 24px; font-size: 1rem; font-weight: 500;
+    border-bottom: 1px solid var(--line); transition: color 0.2s, background 0.2s;
+  }
+  .mobile-nav a:last-child { border-bottom: none; }
+  .mobile-nav a:hover { color: var(--brass); background: rgba(47,111,237,0.04); }
+  .mobile-nav .mobile-cta {
+    margin: 12px 24px 0; background: var(--navy);
+    color: var(--ivory) !important; text-align: center;
+    border-radius: 4px; font-weight: 600; border-bottom: none !important;
+  }
+  .mobile-nav .mobile-cta:hover { background: var(--brass) !important; }
 
-  .hero {
-    padding: 100px 24px 140px;
-    position: relative;
-  }
-  .hero-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  /* HERO */
+  .hero { padding: 100px 24px 140px; position: relative; }
+  .hero-inner { max-width: 1180px; margin: 0 auto; text-align: center; }
   .eyebrow {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin-bottom: 22px;
-    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 22px; display: inline-block;
   }
   .hero h1 {
-    font-size: clamp(2.6rem, 6.5vw, 5rem);
-    line-height: 1.05;
-    margin-bottom: 24px;
-    max-width: 880px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 1.05;
+    margin-bottom: 24px; max-width: 880px; margin-left: auto; margin-right: auto;
   }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--brass);
-  }
+  .hero h1 em { font-style: italic; color: var(--brass); }
   .hero p.lead {
-    font-size: 1.15rem;
-    color: var(--slate);
-    max-width: 560px;
-    margin: 0 auto 40px;
+    font-size: 1.15rem; color: var(--slate);
+    max-width: 560px; margin: 0 auto 40px;
   }
-
   .match-stage {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    position: relative;
-    flex-wrap: wrap;
+    margin-top: 80px; display: flex; justify-content: center;
+    align-items: center; gap: 0; position: relative; flex-wrap: wrap;
   }
   .match-card {
-    background: var(--navy);
-    color: var(--ivory);
-    width: 340px;
-    max-width: 90vw;
-    padding: 36px 32px;
-    border-radius: 8px;
-    text-align: left;
-    position: relative;
-    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s;
+    background: var(--navy); color: var(--ivory); width: 340px; max-width: 90vw;
+    padding: 36px 32px; border-radius: 8px; text-align: left; position: relative;
+    transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.5s;
     box-shadow: 0 20px 50px -20px rgba(15,27,45,0.4);
   }
-  .match-card.right {
-    background: var(--ivory);
-    color: var(--navy);
-    border: 1px solid var(--line);
-  }
+  .match-card.right { background: var(--ivory); color: var(--navy); border: 1px solid var(--line); }
   .match-card .label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.6;
-    margin-bottom: 14px;
-    display: block;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.6;
+    margin-bottom: 14px; display: block;
   }
-  .match-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-  }
-  .match-card p {
-    font-size: 0.92rem;
-    opacity: 0.8;
-    margin-bottom: 20px;
-  }
+  .match-card h3 { font-size: 1.5rem; margin-bottom: 12px; }
+  .match-card p { font-size: 0.92rem; opacity: 0.8; margin-bottom: 20px; }
   .match-card .go {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    text-decoration: underline;
-    text-decoration-color: var(--brass);
-    text-underline-offset: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    text-decoration: underline; text-decoration-color: var(--brass); text-underline-offset: 4px;
   }
-  .match-stage:hover .match-card.left {
-    transform: translateX(26px) rotate(-1.5deg);
-  }
-  .match-stage:hover .match-card.right {
-    transform: translateX(-26px) rotate(1.5deg);
-  }
+  .match-stage:hover .match-card.left { transform: translateX(26px) rotate(-1.5deg); }
+  .match-stage:hover .match-card.right { transform: translateX(-26px) rotate(1.5deg); }
   .match-card.left { margin-right: -18px; z-index: 2; }
   .match-card.right { margin-left: -18px; }
-
   .match-seam {
-    width: 1px;
-    height: 200px;
+    width: 1px; height: 200px;
     background: repeating-linear-gradient(to bottom, var(--brass) 0 6px, transparent 6px 12px);
-    align-self: center;
-    z-index: 1;
+    align-self: center; z-index: 1;
   }
 
+  /* SECTIONS */
   section { padding: 90px 0; }
-  .section-head {
-    max-width: 640px;
-    margin: 0 auto 56px;
-    text-align: center;
-  }
+  .section-head { max-width: 640px; margin: 0 auto 56px; text-align: center; }
   .section-head .eyebrow { margin-bottom: 14px; }
-  .section-head h2 {
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    margin-bottom: 14px;
-  }
+  .section-head h2 { font-size: clamp(1.8rem,4vw,2.6rem); margin-bottom: 14px; }
   .section-head p { color: var(--slate); }
 
+  /* SERVICES */
+  .badge-wrap { position: relative; }
+  .badge-wrap::after {
+    content: ''; position: absolute; top: 0; right: 0;
+    width: 60px; height: calc(100% - 24px);
+    background: linear-gradient(to right, transparent, var(--ivory));
+    pointer-events: none; border-radius: 0 8px 8px 0;
+  }
   .badge-row {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    padding: 8px 0 24px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
+    display: flex; gap: 16px; overflow-x: auto;
+    padding: 8px 0 24px; -webkit-overflow-scrolling: touch; scrollbar-width: thin;
   }
   .badge-row::-webkit-scrollbar { height: 6px; }
   .badge-row::-webkit-scrollbar-thumb { background: var(--brass); border-radius: 3px; }
-
   .role-badge {
-    flex: 0 0 260px;
-    background: white;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 28px 24px;
-    position: relative;
+    flex: 0 0 260px; background: white; border: 1px solid var(--line);
+    border-radius: 8px; padding: 28px 24px; position: relative;
     transition: border-color 0.2s, transform 0.2s;
   }
-  .role-badge:hover {
-    border-color: var(--brass);
-    transform: translateY(-4px);
-  }
+  .role-badge:hover { border-color: var(--brass); transform: translateY(-4px); }
   .role-badge .tag {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--brass);
-    background: rgba(201,162,75,0.1);
-    padding: 4px 10px;
-    border-radius: 100px;
-    display: inline-block;
-    margin-bottom: 18px;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--brass);
+    background: rgba(47,111,237,0.08); padding: 4px 10px;
+    border-radius: 100px; display: inline-block; margin-bottom: 18px;
   }
-  .role-badge h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  .role-badge p {
-    font-size: 0.9rem;
-    color: var(--slate);
-  }
+  .role-badge h3 { font-size: 1.2rem; margin-bottom: 10px; }
+  .role-badge p { font-size: 0.9rem; color: var(--slate); }
 
-  .ledger {
-    background: var(--navy);
-    color: var(--ivory);
-    border-radius: 8px;
-    overflow: hidden;
-  }
+  /* PROCESS */
+  .ledger { background: var(--navy); color: var(--ivory); border-radius: 8px; overflow: hidden; }
   .ledger-row {
-    display: grid;
-    grid-template-columns: 80px 1fr 1fr;
-    gap: 24px;
-    padding: 28px 36px;
-    border-bottom: 1px solid rgba(247,244,237,0.1);
-    align-items: center;
+    display: grid; grid-template-columns: 80px 1fr 1fr;
+    gap: 24px; padding: 28px 36px;
+    border-bottom: 1px solid rgba(247,244,237,0.1); align-items: center;
   }
   .ledger-row:last-child { border-bottom: none; }
-  .ledger-row .num {
-    font-family: 'JetBrains Mono', monospace;
-    color: var(--brass);
-    font-size: 0.95rem;
-  }
-  .ledger-row h4 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 1.15rem;
-  }
-  .ledger-row p {
-    font-size: 0.9rem;
-    opacity: 0.75;
-  }
+  .ledger-row .num { font-family: 'JetBrains Mono', monospace; color: var(--brass); font-size: 0.95rem; }
+  .ledger-row h4 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.15rem; }
+  .ledger-row p { font-size: 0.9rem; opacity: 0.75; }
 
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    text-align: center;
-  }
+  /* STATS */
+  .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; text-align: center; }
   .stat .num {
     font-family: 'JetBrains Mono', monospace;
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    color: var(--navy);
-    font-weight: 500;
+    font-size: clamp(2rem,5vw,3.2rem); color: var(--navy); font-weight: 500;
   }
   .stat .num .accent { color: var(--brass); }
-  .stat .label {
-    font-size: 0.85rem;
-    color: var(--slate);
-    margin-top: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
+  .stat .label { font-size: 0.85rem; color: var(--slate); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .stat .sublabel { font-size: 0.75rem; color: var(--slate); opacity: 0.7; margin-top: 4px; }
 
-  .quote-card {
-    background: white;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 40px;
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: center;
+  /* ABOUT */
+  .about-card {
+    background: white; border: 1px solid var(--line); border-radius: 8px; padding: 48px;
+    display: grid; grid-template-columns: auto 1fr; gap: 40px;
+    align-items: center; max-width: 800px; margin: 0 auto;
   }
+  .about-avatar {
+    width: 96px; height: 96px; border-radius: 50%; background: var(--navy);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif; font-size: 2rem; color: var(--ivory); flex-shrink: 0;
+  }
+  .about-text h3 { font-size: 1.3rem; margin-bottom: 6px; }
+  .about-text .role-title {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 14px; display: block;
+  }
+  .about-text p { color: var(--slate); font-size: 0.95rem; line-height: 1.7; }
+
+  /* TESTIMONIALS */
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .quote-card {
+    background: white; border: 1px solid var(--line); border-radius: 8px; padding: 36px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .quote-card:hover { border-color: var(--brass); transform: translateY(-3px); }
   .quote-card p.q {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    color: var(--navy);
+    font-family: 'Fraunces', serif; font-style: italic;
+    font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px; color: var(--navy); flex: 1;
   }
   .quote-card .who {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--slate);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
+    color: var(--slate); text-transform: uppercase; letter-spacing: 0.08em;
   }
+  .quote-mark { font-family: 'Fraunces', serif; font-size: 3rem; color: var(--brass); opacity: 0.3; line-height: 1; margin-bottom: 8px; }
 
-  .cta-band {
-    background: var(--navy);
-    color: var(--ivory);
-    text-align: center;
-    padding: 80px 24px;
+  /* CONTACT */
+  .contact-section { background: var(--navy); color: var(--ivory); padding: 90px 0; }
+  .contact-inner {
+    max-width: 1180px; margin: 0 auto; padding: 0 24px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
   }
-  .cta-band h2 {
-    font-size: clamp(1.8rem, 4.5vw, 3rem);
-    margin-bottom: 16px;
+  .contact-left h2 { font-size: clamp(1.8rem,4.5vw,2.8rem); margin-bottom: 16px; }
+  .contact-left p { color: rgba(247,249,252,0.7); margin-bottom: 32px; font-size: 1rem; }
+  .contact-detail { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 0.95rem; }
+  .contact-detail a { color: var(--ivory); transition: color 0.2s; }
+  .contact-detail a:hover { color: var(--brass); }
+  .contact-detail .icon {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(47,111,237,0.2); display: flex;
+    align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem;
   }
-  .cta-band p {
-    color: rgba(247,244,237,0.7);
-    margin-bottom: 32px;
+  .contact-form { background: white; border-radius: 8px; padding: 40px; color: var(--navy); }
+  .contact-form h3 { font-size: 1.3rem; margin-bottom: 24px; color: var(--navy); }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--navy); letter-spacing: 0.02em; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--line);
+    border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 0.95rem;
+    color: var(--navy); background: var(--ivory);
+    transition: border-color 0.2s, box-shadow 0.2s; outline: none;
   }
-  .cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--brass); box-shadow: 0 0 0 3px rgba(47,111,237,0.1);
   }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-submit {
+    width: 100%; padding: 14px; background: var(--navy); color: var(--ivory);
+    border: none; border-radius: 4px; font-family: 'Inter', sans-serif;
+    font-size: 0.95rem; font-weight: 600; cursor: pointer;
+    transition: background 0.2s, transform 0.2s; margin-top: 6px;
+  }
+  .form-submit:hover { background: var(--brass); transform: translateY(-1px); }
+  .form-success { display: none; text-align: center; padding: 32px 0; }
+  .form-success .tick { font-size: 2.5rem; margin-bottom: 12px; }
+  .form-success h4 { font-size: 1.2rem; margin-bottom: 8px; color: var(--navy); }
+  .form-success p { color: var(--slate); font-size: 0.95rem; }
+
+  /* BUTTONS */
   .btn {
-    display: inline-block;
-    padding: 14px 32px;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: transform 0.2s, background 0.2s, color 0.2s;
+    display: inline-block; padding: 14px 32px; border-radius: 4px;
+    font-weight: 600; font-size: 0.95rem;
+    transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
   }
-  .btn-primary {
-    background: var(--brass);
-    color: var(--navy);
-  }
+  .btn-primary { background: var(--brass); color: white; }
   .btn-primary:hover { transform: translateY(-2px); }
-  .btn-outline {
-    border: 1px solid rgba(247,244,237,0.3);
-    color: var(--ivory);
-  }
+  .btn-outline { border: 1px solid rgba(11,31,77,0.25); color: var(--navy); }
   .btn-outline:hover { border-color: var(--brass); color: var(--brass); }
   .btn:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
-  footer {
-    padding: 56px 24px 32px;
-    border-top: 1px solid var(--line);
-  }
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
-  }
+  /* FOOTER */
+  footer { padding: 56px 24px 32px; border-top: 1px solid var(--line); }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
   .footer-grid h4 {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--slate);
-    margin-bottom: 16px;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); margin-bottom: 16px;
   }
   .footer-grid ul { list-style: none; }
   .footer-grid li { margin-bottom: 10px; font-size: 0.92rem; }
   .footer-grid a:hover { color: var(--brass); }
   .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-    font-size: 0.85rem;
-    color: var(--slate);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px; padding-top: 24px;
+    border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--slate);
   }
 
+  /* RESPONSIVE */
   @media (max-width: 860px) {
-    .nav-links { display: none; }
+    .nav-links, .nav-cta { display: none; }
+    .menu-toggle { display: flex; }
     .match-card.left, .match-card.right { margin: 0; }
     .match-seam { display: none; }
     .ledger-row { grid-template-columns: 50px 1fr; }
     .ledger-row p { grid-column: 2; }
     .stats { grid-template-columns: 1fr; gap: 40px; }
+    .about-card { grid-template-columns: 1fr; text-align: center; padding: 36px 24px; }
+    .about-avatar { margin: 0 auto; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .contact-inner { grid-template-columns: 1fr; gap: 40px; }
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .hero { padding: 60px 24px 80px; }
+    .match-stage { gap: 16px; }
   }
 </style>
 </head>
@@ -446,14 +356,28 @@
 
 <header>
   <nav class="nav">
-    <a href="#top" class="logo"><img src="E9658EC4-E4D4-4B67-BDD7-44C376507743.PNG" alt="HireX Consultancy" style="height: 80px; vertical-align: middle;"></a>
+    <a href="#top" class="logo">
+      <img src="E9658EC4-E4D4-4B67-BDD7-44C376507743.PNG" alt="HireX Consultancy">
+    </a>
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="#results">Results</a>
+      <a href="#about">About</a>
       <a href="#testimonials">Testimonials</a>
     </div>
     <a href="#contact" class="nav-cta">Start a search</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#process" onclick="closeMenu()">Process</a>
+    <a href="#results" onclick="closeMenu()">Results</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
+    <a href="#contact" class="mobile-cta" onclick="closeMenu()">Start a search</a>
   </nav>
 </header>
 
@@ -464,12 +388,10 @@
       <span class="eyebrow">Recruitment & Executive Search</span>
       <h1>Great companies don't find great people by chance. <em>They hire HireX.</em></h1>
       <p class="lead">We connect ambitious businesses with exceptional talent — across permanent, contract, and executive roles — through a process built on precision, not guesswork.</p>
-
       <div class="cta-buttons">
         <a href="#contact" class="btn btn-primary">Hire talent</a>
-        <a href="#contact" class="btn-outline btn">Find a role</a>
+        <a href="#contact" class="btn btn-outline">Find a role</a>
       </div>
-
       <div class="match-stage">
         <div class="match-card left">
           <span class="label">For employers</span>
@@ -495,32 +417,33 @@
         <h2>Recruitment built around your sector</h2>
         <p>From first hires to leadership teams, we recruit across the roles that keep businesses running and growing.</p>
       </div>
-
-      <div class="badge-row">
-        <div class="role-badge">
-          <span class="tag">Permanent</span>
-          <h3>Full-Time Hiring</h3>
-          <p>End-to-end recruitment for permanent roles — sourcing, screening, and shortlisting candidates who fit your team long-term.</p>
-        </div>
-        <div class="role-badge">
-          <span class="tag">Executive</span>
-          <h3>Leadership Search</h3>
-          <p>Confidential, targeted search for senior and C-level positions where the right hire shapes the future of your business.</p>
-        </div>
-        <div class="role-badge">
-          <span class="tag">Contract</span>
-          <h3>Temporary & Contract Staffing</h3>
-          <p>Fast access to skilled professionals for short-term projects, seasonal demand, or interim cover.</p>
-        </div>
-        <div class="role-badge">
-          <span class="tag">Volume</span>
-          <h3>Bulk & Mass Hiring</h3>
-          <p>Structured hiring drives for businesses scaling teams quickly — without compromising on quality.</p>
-        </div>
-        <div class="role-badge">
-          <span class="tag">Advisory</span>
-          <h3>HR & Hiring Strategy</h3>
-          <p>Guidance on job descriptions, interview frameworks, and hiring processes that consistently attract the right people.</p>
+      <div class="badge-wrap">
+        <div class="badge-row">
+          <div class="role-badge">
+            <span class="tag">Permanent</span>
+            <h3>Full-Time Hiring</h3>
+            <p>End-to-end recruitment for permanent roles — sourcing, screening, and shortlisting candidates who fit your team long-term.</p>
+          </div>
+          <div class="role-badge">
+            <span class="tag">Executive</span>
+            <h3>Leadership Search</h3>
+            <p>Confidential, targeted search for senior and C-level positions where the right hire shapes the future of your business.</p>
+          </div>
+          <div class="role-badge">
+            <span class="tag">Contract</span>
+            <h3>Temporary & Contract Staffing</h3>
+            <p>Fast access to skilled professionals for short-term projects, seasonal demand, or interim cover.</p>
+          </div>
+          <div class="role-badge">
+            <span class="tag">Volume</span>
+            <h3>Bulk & Mass Hiring</h3>
+            <p>Structured hiring drives for businesses scaling teams quickly — without compromising on quality.</p>
+          </div>
+          <div class="role-badge">
+            <span class="tag">Advisory</span>
+            <h3>HR & Hiring Strategy</h3>
+            <p>Guidance on job descriptions, interview frameworks, and hiring processes that consistently attract the right people.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -533,7 +456,6 @@
         <h2>A process that respects everyone's time</h2>
         <p>Four steps, start to finish — built to move quickly without cutting corners.</p>
       </div>
-
       <div class="ledger">
         <div class="ledger-row">
           <span class="num">01</span>
@@ -569,14 +491,35 @@
         <div class="stat">
           <div class="num"><span class="accent">48</span>hr</div>
           <div class="label">Avg. time to first shortlist</div>
+          <div class="sublabel">Based on our recent placements</div>
         </div>
         <div class="stat">
           <div class="num"><span class="accent">100</span>%</div>
           <div class="label">Candidates pre-screened</div>
+          <div class="sublabel">Every profile vetted before you see it</div>
         </div>
         <div class="stat">
           <div class="num"><span class="accent">0</span> spam</div>
           <div class="label">Unqualified resumes sent</div>
+          <div class="sublabel">We only send people worth your time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Who we are</span>
+        <h2>Recruitment with a human behind it</h2>
+        <p>We're not a job board or an algorithm — we're recruiters who take the time to understand your business before we ever send a CV.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-avatar">H</div>
+        <div class="about-text">
+          <h3>HireX Consultancy</h3>
+          <span class="role-title">Founder & Lead Consultant</span>
+          <p>With years of experience placing talent across industries, HireX was built on a simple belief: every hire matters. We work closely with employers and candidates to make sure the match is right — not just on paper, but in practice. When you work with us, you speak to a person, not a portal.</p>
         </div>
       </div>
     </div>
@@ -588,19 +531,92 @@
         <span class="eyebrow">What people say</span>
         <h2>Trusted by employers and candidates alike</h2>
       </div>
-      <div class="quote-card">
-        <p class="q">"HireX sent us three candidates — all three were interview-ready and one became our best hire this year. No wasted time, no filler."</p>
-        <p class="who">Hiring Manager, Mid-size Tech Firm</p>
+      <div class="testimonials-grid">
+        <div class="quote-card">
+          <div>
+            <div class="quote-mark">"</div>
+            <p class="q">HireX sent us three candidates — all three were interview-ready and one became our best hire this year. No wasted time, no filler.</p>
+          </div>
+          <p class="who">Hiring Manager · Mid-size Tech Firm</p>
+        </div>
+        <div class="quote-card">
+          <div>
+            <div class="quote-mark">"</div>
+            <p class="q">I'd been job hunting for months. Within two weeks of submitting my profile to HireX, I had two solid interviews and an offer. Genuinely impressive.</p>
+          </div>
+          <p class="who">Software Engineer · Placed Candidate</p>
+        </div>
+        <div class="quote-card">
+          <div>
+            <div class="quote-mark">"</div>
+            <p class="q">We needed to scale our ops team fast. HireX delivered a shortlist in under 48 hours — every candidate was qualified and ready to move. Exactly what we needed.</p>
+          </div>
+          <p class="who">Operations Director · E-commerce Company</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-band" id="contact">
-    <h2>Let's find your next great hire — or your next great role.</h2>
-    <p>Tell us what you need. We'll take it from there.</p>
-    <div class="cta-buttons">
-      <a href="mailto:sales@hirexconsultancy.com" class="btn btn-primary">Email us</a>
-      <a href="#" class="btn-outline btn">Schedule a call</a>
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <h2>Let's find your next great hire — or your next great role.</h2>
+        <p>Tell us what you need. We'll take it from there — no automated responses, no long waits.</p>
+        <div class="contact-detail">
+          <div class="icon">✉</div>
+          <a href="mailto:sales@hirexconsultant.com">sales@hirexconsultant.com</a>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">💬</div>
+          <a href="https://wa.me/918200438098" target="_blank" rel="noopener">WhatsApp: +91 8200 438098</a>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">🕐</div>
+          <span>Mon–Fri, 10am–7pm IST</span>
+        </div>
+      </div>
+      <div class="contact-form" id="contactForm">
+        <h3>Send us a message</h3>
+        <div id="formBody">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" placeholder="Ravi" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" placeholder="Mehta" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" placeholder="+91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="type">I am a…</label>
+            <select id="type">
+              <option value="">Select one</option>
+              <option value="employer">Employer looking to hire</option>
+              <option value="candidate">Candidate looking for a role</option>
+              <option value="other">Other enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us more</label>
+            <textarea id="message" placeholder="Role you're hiring for, your industry, timeline — or just say hello."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Send message</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="tick">✅</div>
+          <h4>Message received!</h4>
+          <p>We'll get back to you within one business day.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -611,13 +627,14 @@
     <div class="footer-grid">
       <div>
         <h4>HireX Consultancy</h4>
-        <p style="color: var(--slate); font-size: 0.92rem; max-width: 320px;">A recruitment consultancy connecting businesses with the people who help them grow — across permanent, contract, and executive roles.</p>
+        <p style="color:var(--slate);font-size:0.92rem;max-width:320px;">A recruitment consultancy connecting businesses with the people who help them grow — across permanent, contract, and executive roles.</p>
       </div>
       <div>
         <h4>Navigate</h4>
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#process">Our process</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -626,8 +643,8 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:sales@hirexconsultant.com">sales@hirexconsultant.com</a></li>
-          <li><a href="whatsapp:+918200438098">+91 8200 438098</a></li>
-          <li>Mon–Fri, 10am–7pm</li>
+          <li><a href="https://wa.me/918200438098" target="_blank" rel="noopener">+91 8200 438098</a></li>
+          <li>Mon–Fri, 10am–7pm IST</li>
         </ul>
       </div>
     </div>
@@ -637,6 +654,45 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function toggleMenu(btn) {
+    const nav = document.getElementById('mobileNav');
+    const isOpen = nav.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen);
+  }
+  function closeMenu() {
+    const nav = document.getElementById('mobileNav');
+    const btn = document.querySelector('.menu-toggle');
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('mobileNav');
+    const btn = document.querySelector('.menu-toggle');
+    if (nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+  function submitForm() {
+    const fname = document.getElementById('fname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    if (!fname || !email) { alert('Please fill in your name and email address.'); return; }
+    const subject = encodeURIComponent('HireX Enquiry – ' + (document.getElementById('type').value === 'employer' ? 'Hiring' : document.getElementById('type').value === 'candidate' ? 'Job Seeking' : 'General'));
+    const body = encodeURIComponent(
+      'Name: ' + fname + ' ' + document.getElementById('lname').value + '\n' +
+      'Email: ' + email + '\n' +
+      'Phone: ' + document.getElementById('phone').value + '\n' +
+      'Type: ' + document.getElementById('type').value + '\n\n' +
+      'Message:\n' + document.getElementById('message').value
+    );
+    window.location.href = 'mailto:sales@hirexconsultant.com?subject=' + subject + '&body=' + body;
+    document.getElementById('formBody').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
 
 </body>
 </html>
