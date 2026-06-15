@@ -413,6 +413,41 @@
       </div>
     </div>
   </section>
+<section class="cta" id="contact">
+    <div class="wrap">
+      <div class="section-tag" style="color:var(--accent)">Contact</div>
+      <h2>Hiring for pharma or chemical operations?</h2>
+      <p>Share the role, location and function, and HireX Consultancy can respond with candidates suited to your plant, project or corporate hiring need.</p>
+      <a class="btn btn-primary" href="https://wa.me/918200438098" target="_blank" rel="noopener noreferrer">Get in touch</a>
+    </div>
+  </section>
+</main>
 
-  <section class="cta" id="contact">
-    <div class="
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span>©️ 2026 HireX Consultancy. Pharma and chemical recruitment across India.</span>
+    <a href="https://www.hirexconsultant.com" target="_blank" rel="noopener noreferrer">Back to HireX Home</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const toggle=document.querySelector('[data-theme-toggle]');
+  const root=document.documentElement;
+  let theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  root.setAttribute('data-theme',theme);
+  const render=()=>{
+    toggle.textContent=theme==='dark'?'☼':'◐';
+    toggle.setAttribute('aria-label',theme==='dark'?'Switch to light mode':'Switch to dark mode');
+  };
+  render();
+  toggle.addEventListener('click',()=>{
+    theme=theme==='dark'?'light':'dark';
+    root.setAttribute('data-theme',theme);
+    render();
+  });
+})();
+</script>
+</body>
+</html>
+ 
