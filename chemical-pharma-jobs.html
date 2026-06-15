@@ -1,1 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharma & Chemical Recruitment Consultancy in India | HireX Consultancy</title>
+<meta name="description" content="HireX Consultancy specializes in pharma and chemical industry recruitment across India.">
+<meta property="og:title" content="Pharma & Chemical Recruitment Consultancy in India | HireX Consultancy">
+<meta property="og:description" content="HireX Consultancy connects pharma manufacturers, CDMOs, API plants and chemical businesses with production, QA, QC, regulatory and plant leadership talent.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0F172A">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root,[data-theme="light"]{
+    --bg:#F5F7F4;
+    --surface:#FCFDFB;
+    --surface-2:#E8EEE6;
+    --text:#0F172A;
+    --muted:#5B687A;
+    --line:rgba(15,23,42,0.12);
+    --primary:#2F6B3A;
+    --primary-2:#89A94E;
+    --accent:#B68A3A;
+    --hero:#111827;
+    --hero-text:#F8FAFC;
+    --hero-muted:#CBD5E1;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(15,23,42,0.08);
+  }
+
+  [data-theme="dark"]{
+    --bg:#0B1220;
+    --surface:#121A2B;
+    --surface-2:#182235;
+    --text:#E5E7EB;
+    --muted:#9CA3AF;
+    --line:rgba(229,231,235,0.12);
+    --primary:#76B07F;
+    --primary-2:#A8C66C;
+    --accent:#D8B26A;
+    --hero:#060B14;
+    --hero-text:#F8FAFC;
+    --hero-muted:#CBD5E1;
+    --shadow:0 10px 30px rgba(0,0,0,0.35);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+  }
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .sr-only{position:absolute;left:-9999px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .skip-link{position:absolute;left:-9999px;top:auto}
+  .skip-link:focus{left:16px;top:16px;background:var(--accent);color:#111;padding:10px 14px;border-radius:999px;z-index:1000}
+
+  .theme-toggle{
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--text);
+    width:44px;height:44px;border-radius:999px;display:grid;place-items:center;
+  }
+
+  header{
+    position:sticky;top:0;z-index:40;
+    backdrop-filter:blur(14px);
+    background:color-mix(in srgb, var(--bg) 86%, transparent);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .logo-mark{width:40px;height:40px;color:var(--primary)}
+  .brand-text{display:flex;flex-direction:column;line-height:1.1}
+  .brand-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.08rem}
+  .brand-sub{font-size:.78rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  nav a{text-decoration:none;font-size:.95rem;color:var(--muted);font-weight:600}
+  nav a:hover{color:var(--text)}
+
+  .hero{
+    background:radial-gradient(circle at top right, rgba(182,138,58,.16), transparent 28%), linear-gradient(180deg, var(--hero) 0%, #0B1320 100%);
+    color:var(--hero-text);
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:88px 0 72px;
+  }
+  .eyebrow{
+    display:inline-block;margin-bottom:16px;color:var(--accent);font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08;margin:0}
+  h1{font-size:clamp(2.6rem,5vw,4.8rem);margin-bottom:22px;max-width:11ch}
+  h1 em{font-style:italic;font-weight:300;color:#BEDC87}
+  .hero p{margin:0 0 30px;color:var(--hero-muted);max-width:58ch;font-size:1.03rem}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 24px;border-radius:999px;
+    text-decoration:none;font-weight:700;font-size:.95rem;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--accent);color:#111827}
+  .btn-primary:hover{background:#d9b16a}
+  .btn-secondary{border-color:rgba(248,250,252,.2);color:var(--hero-text)}
+  .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+  .hero-notes{display:flex;gap:18px;flex-wrap:wrap;color:#D6DCE6;font-size:.9rem}
+  .hero-card{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:28px;box-shadow:var(--shadow)
+  }
+  .hero-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .hero-panel{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px
+  }
+  .hero-panel small{display:block;color:#C8D1DD;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;margin-bottom:6px}
+  .hero-panel strong{font-size:1.02rem}
+  .process-line{display:flex;gap:10px;align-items:center;margin-top:18px;color:#D9E2EC;font-size:.92rem}
+  .process-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(182,138,58,.14)}
+
+  section{padding:84px 0}
+  .section-head{margin-bottom:42px}
+  .section-tag{font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--primary);margin-bottom:10px}
+  h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:14px}
+  .section-head p{max-width:64ch;color:var(--muted);font-size:1.02rem}
+
+  .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  .about-copy p{color:var(--muted);margin:0 0 18px}
+  .stats{display:grid;gap:14px}
+  .stat-card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:22px 24px;box-shadow:var(--shadow)}
+  .stat-card strong{display:block;font-family:'Fraunces',serif;font-size:1.7rem;margin-bottom:4px}
+  .stat-card span{color:var(--muted);font-size:.96rem}
+
+  .specialties{background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .specialty-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .specialty-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;min-height:180px}
+  .specialty-card h3{font-size:1.15rem;margin-bottom:10px}
+  .specialty-card p{margin:0;color:var(--muted);font-size:.95rem}
+
+  .listing-table{border-top:1px solid var(--line)}
+  .listing{
+    display:grid;grid-template-columns:64px 1.4fr 1fr 1fr 110px;gap:18px;align-items:center;
+    padding:22px 18px;border-bottom:1px solid var(--line);text-decoration:none;background:transparent;
+  }
+  .listing:hover{background:color-mix(in srgb, var(--primary) 8%, transparent)}
+  .id{font-family:'Fraunces',serif;color:var(--primary);font-weight:700}
+  .role-name{font-weight:700;font-size:1.04rem}
+  .role-desc{display:block;color:var(--muted);font-size:.88rem;margin-top:4px}
+  .meta{font-size:.9rem;color:var(--text)}
+  .meta-label{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .view{text-align:right;font-weight:700;white-space:nowrap}
+
+  .process-list{display:grid;gap:0;border-top:1px solid var(--line)}
+  .process-item{display:grid;grid-template-columns:86px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
+  .step{font-family:'Fraunces',serif;font-size:1.7rem;color:var(--accent)}
+  .process-item h3{font-size:1.14rem;margin-bottom:6px}
+  .process-item p{margin:0;color:var(--muted)}
+
+  .cta{background:var(--hero);color:var(--hero-text);text-align:center}
+  .cta h2{color:var(--hero-text)}
+  .cta p{max-width:60ch;margin:0 auto 28px;color:var(--hero-muted)}
+  .footer{padding:30px 0;background:var(--hero);color:#A8B3C2;border-top:1px solid rgba(255,255,255,.08)}
+  .footer-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+  .footer a{color:#D8B26A;text-decoration:none}
+
+  @media (max-width:980px){
+    .hero-grid,.about-grid,.specialty-grid{grid-template-columns:1fr}
+    nav{display:none}
+  }
+
+  @media (max-width:760px){
+    .hero-grid{padding:68px 0 56px;gap:26px}
+    section{padding:68px 0}
+    .listing{grid-template-columns:1fr;gap:8px}
+    .view{text-align:left}
+    .process-item{grid-template-columns:1fr;gap:10px}
+    .hero-card-grid{grid-template-columns:1fr}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+  }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header>
+  <div class="wrap header-row">
+    <a class="brand" href="https://www.hirexconsultant.com" target="_blank" rel="noopener noreferrer" aria-label="HireX Consultancy home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="6" y="8" width="14" height="32" rx="4" stroke="currentColor" stroke-width="2.4"></rect>
+        <rect x="28" y="8" width="14" height="32" rx="4" stroke="currentColor" stroke-width="2.4"></rect>
+        <path d="M20 16L28 24L20 32" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">HireX Consultancy</span>
+        <span class="brand-sub">Pharma & Chemical Hiring</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#specialties">Coverage</a>
+      <a href="#roles">Roles</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Pharma & Chemical Hiring · Pan-India</span>
+        <h1>We hire the teams behind <em>regulated manufacturing</em></h1>
+        <p>HireX Consultancy connects pharmaceutical manufacturers, API businesses, specialty chemical companies and industrial plants with production, quality, regulatory, EHS and plant leadership talent built for compliance, scale and execution.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#roles">View open roles</a>
+          <a class="btn btn-secondary" href="#contact">Talk to a recruiter</a>
+        </div>
+        <div class="hero-notes">
+          <span>GMP-aware screening</span>
+          <span>Plant-to-corporate mandates</span>
+          <span>Coverage across major industrial hubs</span>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Key hiring focus areas">
+        <h2 style="font-size:1.6rem;margin-bottom:8px;color:var(--hero-text)">Built for manufacturing-critical roles</h2>
+        <p style="margin:0;color:var(--hero-muted)">From cleanroom operations and QA systems to process plants and regulatory teams, every shortlist is aligned to product category, audit exposure, shift structure and site environment.</p>
+        <div class="hero-card-grid">
+          <div class="hero-panel">
+            <small>Industry</small>
+            <strong>Pharma, API, chemicals, formulations</strong>
+          </div>
+          <div class="hero-panel">
+            <small>Focus</small>
+            <strong>Production, QA, QC, RA, EHS, projects</strong>
+          </div>
+          <div class="hero-panel">
+            <small>Markets</small>
+            <strong>Ahmedabad, Ankleshwar, Vadodara, Hyderabad, Pune</strong>
+          </div>
+          <div class="hero-panel">
+            <small>Delivery</small>
+            <strong>Screening, shortlist and interview coordination</strong>
+          </div>
+        </div>
+        <div class="process-line"><span class="process-dot"></span><span>Hiring calibrated to audit readiness, process discipline and plant realities</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="section-tag">About HireX</div>
+        <h2>Recruitment shaped by compliance, production pressure and technical fit</h2>
+        <p>Pharma and chemical hiring is not only about filling vacancies. It is about matching the right person to the right process environment, documentation culture, product line, safety demands and turnaround expectations.</p>
+        <p>We screen candidates for hands-on plant exposure, batch discipline, deviation awareness, audit confidence, team leadership and communication with cross-functional stakeholders across manufacturing and corporate functions.</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card"><strong>6 core tracks</strong><span>Production, quality, regulatory, EHS, maintenance and leadership hiring</span></div>
+        <div class="stat-card"><strong>Pan-India</strong><span>Coverage across pharma clusters and chemical manufacturing corridors</span></div>
+        <div class="stat-card"><strong>End-to-end</strong><span>Sourcing, technical screening, shortlist delivery and coordination support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialties" id="specialties">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">Industry Coverage</div>
+        <h2>Where we recruit most often</h2>
+        <p>Our search work spans regulated manufacturing environments, process plants and business functions that support scale, quality and compliance.</p>
+      </div>
+      <div class="specialty-grid">
+        <article class="specialty-card">
+          <h3>Formulations</h3>
+          <p>Solid dosage, injectables, OSD, sterile operations, packaging and line supervision roles.</p>
+        </article>
+        <article class="specialty-card">
+          <h3>API & Bulk Drugs</h3>
+          <p>Process manufacturing, shift operations, reactor handling, validation-facing and plant support roles.</p>
+        </article>
+        <article class="specialty-card">
+          <h3>Specialty Chemicals</h3>
+          <p>Process control, EHS, quality systems, utility, maintenance and plant coordination mandates.</p>
+        </article>
+        <article class="specialty-card">
+          <h3>Corporate Functions</h3>
+          <p>Regulatory affairs, documentation, procurement, projects, planning and site leadership hiring.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="roles">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">Roles We Recruit</div>
+        <h2>Open mandates across pharma and chemical operations</h2>
+        <p>From shop-floor execution to compliance leadership, these are the roles we support most frequently.</p>
+      </div>
+      <div class="listing-table">
+        <a class="listing" href="#contact">
+          <span class="id">01</span>
+          <span>
+            <span class="role-name">Production Executive / Manager</span>
+            <span class="role-desc">Handles batch execution, line discipline, manpower and daily manufacturing targets</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Manufacturing Operations</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid–Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">02</span>
+          <span>
+            <span class="role-name">QA / QC Executive</span>
+            <span class="role-desc">Supports systems, documentation, investigations, sampling, testing and release workflow</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Quality Assurance / Control</span>
+          <span class="meta"><span class="meta-label">Level</span>Entry–Mid</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">03</span>
+          <span>
+            <span class="role-name">Regulatory Affairs Officer / Manager</span>
+            <span class="role-desc">Coordinates dossier, compliance, submissions and audit-facing documentation work</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Regulatory & Compliance</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid–Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">04</span>
+          <span>
+            <span class="role-name">EHS / Plant Safety Manager</span>
+            <span class="role-desc">Drives safety systems, risk controls, training and incident-prevention practices</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>EHS & Plant Systems</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid–Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">05</span>
+          <span>
+            <span class="role-name">Maintenance / Utility Engineer</span>
+            <span class="role-desc">Supports uptime, equipment reliability, utilities and preventive maintenance execution</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Engineering Support</span>
+          <span class="meta"><span class="meta-label">Level</span>Mid</span>
+          <span class="view">Discuss role →</span>
+        </a>
+
+        <a class="listing" href="#contact">
+          <span class="id">06</span>
+          <span>
+            <span class="role-name">Plant Head / Site Leader</span>
+            <span class="role-desc">Leads operations, quality culture, people management and cross-functional site performance</span>
+          </span>
+          <span class="meta"><span class="meta-label">Function</span>Leadership</span>
+          <span class="meta"><span class="meta-label">Level</span>Senior</span>
+          <span class="view">Discuss role →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">How We Work</div>
+        <h2>From plant brief to candidate shortlist</h2>
+        <p>A focused hiring process designed for technical roles where environment fit matters as much as designation.</p>
+      </div>
+      <div class="process-list">
+        <div class="process-item">
+          <span class="step">01</span>
+          <div>
+            <h3>Understand the operating context</h3>
+            <p>We map the role to product category, site setup, shift expectations, reporting structure, compliance exposure and hiring urgency.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">02</span>
+          <div>
+            <h3>Screen for technical and cultural fit</h3>
+            <p>We assess hands-on experience, plant discipline, documentation comfort, audit readiness, communication and team-handling capability.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">03</span>
+          <div>
+            <h3>Deliver a practical shortlist</h3>
+            <p>You receive vetted candidates aligned to role criticality, location, compensation band and plant realities, ready for interview movement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="
