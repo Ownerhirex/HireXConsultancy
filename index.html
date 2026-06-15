@@ -227,9 +227,16 @@
   .industries .eyebrow { color: #7EB3FF; }
   .ind-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .ind-card {
-    border: 1px solid rgba(247,249,252,0.12); border-radius: 8px; padding: 24px 20px;
-    transition: background 0.2s, border-color 0.2s; cursor: default;
-  }
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+    border: 1px solid rgba(247,249,252,0.12);
+    border-radius: 8px;
+    padding: 24px 20px;
+    transition: background 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
   .ind-card:hover { background: rgba(47,111,237,0.15); border-color: rgba(47,111,237,0.5); }
   .ind-card .iicon { font-size: 1.6rem; margin-bottom: 12px; display: block; }
   .ind-card h3 { font-size: 1rem; color: white; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-weight: 600; }
@@ -407,7 +414,34 @@
     transition: opacity 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
   .wa-float:hover .wa-float-label { opacity: 1; }
+.stats-section{
+padding:40px 0;
+background:white;
+}
 
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.stat-box{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+border:1px solid var(--line);
+}
+
+.stat-box h3{
+font-size:36px;
+color:var(--brass);
+}
+
+.stat-box p{
+margin-top:5px;
+color:var(--slate);
+}
   /* ─── RESPONSIVE ─── */
   @media (max-width: 980px) {
     .services-grid { grid-template-columns: repeat(2,1fr); }
@@ -484,6 +518,35 @@
 <main id="top">
 
   <!-- ─── HERO ─── -->
+  <section class="stats-section">
+<div class="wrap">
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h3>5000+</h3>
+<p>Candidate Database</p>
+</div>
+
+<div class="stat-box">
+<h3>200+</h3>
+<p>Successful Closures</p>
+</div>
+
+<div class="stat-box">
+<h3>48 Hours</h3>
+<p>Average Shortlisting</p>
+</div>
+
+<div class="stat-box">
+<h3>9+</h3>
+<p>Industries Served</p>
+</div>
+
+</div>
+
+</div>
+</section>
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-grid">
@@ -604,51 +667,51 @@
         <p>Dedicated recruitment expertise across the sectors that power India's economy.</p>
       </div>
       <div class="ind-grid">
-        <div class="ind-card">
+        <a href="real-estate-jobs.html" class="ind-card">
           <span class="iicon">🏗️</span>
           <h3>Real Estate</h3>
           <p>Sales managers, project heads, channel partners, property consultants, and leadership roles across developers and brokerages.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="bfsi-jobs.html" class="ind-card">
           <span class="iicon">🏦</span>
           <h3>BFSI</h3>
           <p>Relationship managers, branch managers, credit analysts, insurance advisors, and banking operations professionals.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+       <a href="manufacturing-jobs.html" class="ind-card">
           <span class="iicon">⚙️</span>
           <h3>Manufacturing</h3>
           <p>Plant heads, production supervisors, quality engineers, maintenance leads, and supply chain managers.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="chemical-pharma-jobs.html" class="ind-card">
           <span class="iicon">🧪</span>
           <h3>Chemical & Pharma</h3>
           <p>R&D scientists, regulatory affairs, QC/QA managers, production chemists, and technical sales roles.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="it-jobs.html" class="ind-card">
           <span class="iicon">💻</span>
           <h3>IT & Technology</h3>
           <p>Software engineers, project managers, data analysts, DevOps, product managers, and IT leadership.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="retail-jobs.html" class="ind-card">
           <span class="iicon">🛍️</span>
           <h3>Retail & E-Commerce</h3>
           <p>Store managers, category heads, demand planners, operations managers, and customer experience leads.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="logistics-jobs.html" class="ind-card">
           <span class="iicon">🚚</span>
           <h3>Logistics & Supply Chain</h3>
           <p>Warehouse managers, fleet supervisors, procurement heads, logistics coordinators, and operations leads.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="healthcare-jobs.html" class="ind-card">
           <span class="iicon">🏥</span>
           <h3>Healthcare</h3>
           <p>Hospital administrators, medical officers, clinical coordinators, lab managers, and allied health professionals.</p>
-        </div>
-        <div class="ind-card">
+        </a>
+        <a href="corporate-jobs.html" class="ind-card">
           <span class="iicon">🏢</span>
           <h3>Corporate Functions</h3>
           <p>HR managers, finance and accounts, legal, administration, and C-suite roles across all industries.</p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
