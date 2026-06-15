@@ -377,7 +377,40 @@
   .form-success .tick { font-size: 2.4rem; margin-bottom: 10px; }
   .form-success h4 { font-size: 1.1rem; margin-bottom: 6px; color: var(--navy); }
   .form-success p { color: var(--slate); font-size: 0.9rem; }
+/* ---------- TESTIMONIALS ---------- */
 
+.testimonials{
+  background:#fff;
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+}
+
+.testimonial{
+  background:var(--stone);
+  padding:24px;
+  border-radius:8px;
+  border:1px solid var(--line);
+}
+
+.testimonial p{
+  color:var(--slate);
+  font-style:italic;
+  margin-bottom:16px;
+}
+
+.testimonial h4{
+  margin:0;
+  color:var(--navy);
+}
+
+.testimonial span{
+  font-size:0.85rem;
+  color:var(--slate);
+}
   /* ─── FOOTER ─── */
   footer { padding: 52px 24px 28px; border-top: 1px solid var(--line); }
   .footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 40px; }
@@ -831,7 +864,39 @@ color:var(--slate);
       </div>
     </div>
   </section>
+<section class="testimonials">
+  <div class="wrap">
 
+    <div class="section-head">
+      <div class="section-tag">Client Testimonials</div>
+      <h2>What our clients say</h2>
+      <p>Trusted by companies across multiple industries.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial">
+        <p>"HireX Consultancy helped us close 3 critical sales positions within 10 days. The profiles were highly relevant and pre-screened."</p>
+        <h4>Alpesh Tailor</h4>
+        <span>Director, Real Estate Developer</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"We struggled for weeks to find experienced Relationship Managers. HireX delivered quality candidates quickly."</p>
+        <h4>Rahul Shah</h4>
+        <span>Regional Manager, Housing Finance Company</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"Professional, transparent and efficient. Their team stayed involved throughout the hiring process."</p>
+        <h4>Neha Desai</h4>
+        <span>Head HR, Logistics Company</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
   <!-- ─── ABOUT / FOUNDER ─── -->
   <section id="about">
     <div class="wrap">
