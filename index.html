@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="HireX Consultancy delivers premium recruitment and executive search across India." />
+  <meta name="description" content="HireX Consultancy is a premium recruitment agency delivering staffing, executive search, and hiring solutions across India." />
   <title>HireX Consultancy | Recruitment & Executive Search Across India</title>
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.hirexconsultant.com/" />
 
   <meta property="og:title" content="HireX Consultancy | Recruitment & Executive Search Across India" />
-  <meta property="og:description" content="Connecting ambitious businesses with exceptional talent across Real Estate, BFSI, IT, Manufacturing, Healthcare & more." />
+  <meta property="og:description" content="HireX helps companies hire better and job seekers find the right role across India." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.hirexconsultant.com/" />
   <meta property="og:image" content="https://www.hirexconsultant.com/og-image.jpg" />
@@ -17,39 +17,40 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg:#f7f9fc;
+      --bg:#f6f8fc;
       --bg2:#eef3ff;
-      --navy:#0b1f4d;
-      --navy2:#102c62;
+      --navy:#071a3a;
+      --navy2:#0f2f66;
       --text:#10213f;
       --muted:#5c6b7a;
-      --white:#ffffff;
-      --line:rgba(11,31,77,.10);
-      --line2:rgba(11,31,77,.06);
+      --line:rgba(7,26,58,.10);
+      --line2:rgba(7,26,58,.06);
+      --white:#fff;
       --blue:#2f6fed;
-      --blue2:#4c86ff;
+      --blue2:#5a8eff;
       --green:#1a7a4c;
-      --shadow:0 22px 60px rgba(11,31,77,.10);
-      --shadow2:0 12px 30px rgba(11,31,77,.08);
-      --radius:24px;
-      --radius2:18px;
-      --max:1180px;
+      --gold:#f0b95a;
+      --shadow:0 24px 60px rgba(7,26,58,.10);
+      --shadow2:0 12px 30px rgba(7,26,58,.08);
+      --radius:28px;
+      --radius2:20px;
+      --max:1200px;
       --ease:cubic-bezier(.2,.8,.2,1);
     }
 
-    *{margin:0;padding:0;box-sizing:border-box}
+    *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{
       font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
       color:var(--text);
       background:
-        radial-gradient(circle at top left, rgba(47,111,237,.10), transparent 30%),
-        radial-gradient(circle at top right, rgba(26,122,76,.08), transparent 26%),
-        linear-gradient(180deg, #fbfcff 0%, var(--bg) 52%, #f4f7fd 100%);
+        radial-gradient(circle at top left, rgba(47,111,237,.10), transparent 32%),
+        radial-gradient(circle at top right, rgba(240,185,90,.10), transparent 24%),
+        linear-gradient(180deg, #fbfcff 0%, var(--bg) 52%, #f3f6fd 100%);
       overflow-x:hidden;
       line-height:1.65;
     }
@@ -58,8 +59,8 @@
     img{max-width:100%;display:block}
     button,input,textarea,select{font:inherit}
     ::selection{background:rgba(47,111,237,.16)}
-
     .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
     .eyebrow{
       display:inline-flex;
       align-items:center;
@@ -79,23 +80,22 @@
     }
     .section-head{
       max-width:760px;
-      margin:0 auto 52px;
+      margin:0 auto 54px;
       text-align:center;
     }
     .section-head h2{
-      margin:0 0 12px;
       font-family:Fraunces,serif;
-      font-size:clamp(2rem,4vw,3.15rem);
-      line-height:1.03;
+      font-size:clamp(2rem,4vw,3.25rem);
+      line-height:1.04;
       letter-spacing:-.04em;
+      margin-bottom:12px;
       color:var(--navy);
     }
     .section-head p{
-      margin:0;
+      font-size:1.02rem;
       color:var(--muted);
-      font-size:1.03rem;
       max-width:700px;
-      margin-inline:auto;
+      margin:0 auto;
     }
     .btn{
       display:inline-flex;
@@ -114,15 +114,14 @@
     .btn-primary{
       background:linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
       color:#fff;
-      box-shadow:0 16px 34px rgba(11,31,77,.18);
+      box-shadow:0 18px 36px rgba(7,26,58,.18);
     }
     .btn-outline{
-      background:rgba(255,255,255,.76);
-      border-color:rgba(11,31,77,.12);
+      background:rgba(255,255,255,.78);
+      border-color:rgba(7,26,58,.12);
       color:var(--navy);
-      backdrop-filter:blur(14px);
+      backdrop-filter:blur(16px);
     }
-    .btn-outline:hover{border-color:rgba(47,111,237,.28);color:var(--blue)}
     .btn-wa{
       background:#25D366;
       color:#fff;
@@ -130,8 +129,8 @@
     }
 
     .card{
-      background:rgba(255,255,255,.84);
-      border:1px solid rgba(11,31,77,.08);
+      background:rgba(255,255,255,.86);
+      border:1px solid rgba(7,26,58,.08);
       border-radius:var(--radius);
       box-shadow:var(--shadow2);
       backdrop-filter:blur(18px);
@@ -141,15 +140,15 @@
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(247,249,252,.74);
+      background:rgba(246,248,252,.74);
       backdrop-filter:blur(18px);
       border-bottom:1px solid transparent;
       transition:background .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
     }
     header.scrolled{
-      background:rgba(247,249,252,.92);
-      box-shadow:0 10px 30px rgba(11,31,77,.06);
-      border-color:rgba(11,31,77,.08);
+      background:rgba(246,248,252,.92);
+      box-shadow:0 10px 30px rgba(7,26,58,.06);
+      border-color:rgba(7,26,58,.08);
     }
     .nav{
       max-width:var(--max);
@@ -160,30 +159,19 @@
       justify-content:space-between;
       gap:18px;
     }
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:900;
-      letter-spacing:-.02em;
-      color:var(--navy);
-      min-width:0;
-    }
     .logo img{
-      height:72px;
+      height:74px;
       width:auto;
-      display:block;
     }
     .nav-links{
       display:flex;
       align-items:center;
       gap:28px;
-      color:#30415e;
-      font-weight:600;
+      color:#32425f;
       font-size:.95rem;
+      font-weight:700;
     }
-    .nav-links a{opacity:.92;transition:opacity .2s var(--ease), color .2s var(--ease)}
-    .nav-links a:hover{opacity:1;color:var(--blue)}
+    .nav-links a:hover{color:var(--blue)}
     .nav-actions{
       display:flex;
       align-items:center;
@@ -192,9 +180,9 @@
     .menu-toggle{
       display:none;
       width:48px;height:48px;
-      border-radius:14px;
-      border:1px solid rgba(11,31,77,.10);
-      background:rgba(255,255,255,.78);
+      border-radius:16px;
+      border:1px solid rgba(7,26,58,.10);
+      background:rgba(255,255,255,.76);
       backdrop-filter:blur(12px);
       align-items:center;
       justify-content:center;
@@ -220,14 +208,14 @@
     .mobile-nav.open{display:block}
     .mobile-nav .panel{
       padding:12px;
-      border-radius:20px;
+      border-radius:22px;
     }
     .mobile-nav a{
       display:block;
       padding:14px 14px;
       border-radius:14px;
+      font-weight:800;
       color:var(--navy);
-      font-weight:700;
     }
     .mobile-nav a:hover{background:rgba(47,111,237,.06)}
     .mobile-nav .cta-row{
@@ -239,21 +227,28 @@
 
     .hero{
       position:relative;
-      padding:86px 0 38px;
+      padding:72px 0 38px;
       overflow:hidden;
     }
     .hero::before,
     .hero::after{
       content:"";
       position:absolute;
-      width:560px;height:560px;
       border-radius:50%;
-      filter:blur(42px);
-      opacity:.22;
+      filter:blur(44px);
+      opacity:.20;
       pointer-events:none;
     }
-    .hero::before{top:-250px;right:-220px;background:rgba(47,111,237,.42)}
-    .hero::after{bottom:-300px;left:-220px;background:rgba(240,185,90,.26)}
+    .hero::before{
+      width:560px;height:560px;
+      top:-250px;right:-180px;
+      background:rgba(47,111,237,.45);
+    }
+    .hero::after{
+      width:520px;height:520px;
+      bottom:-290px;left:-200px;
+      background:rgba(240,185,90,.28);
+    }
     .hero-grid{
       position:relative;
       z-index:1;
@@ -263,12 +258,12 @@
       align-items:center;
     }
     .hero h1{
-      margin:0 0 18px;
       font-family:Fraunces,serif;
-      font-size:clamp(3rem,6vw,5.55rem);
-      line-height:.93;
+      font-size:clamp(2.8rem,6vw,5.7rem);
+      line-height:.92;
       letter-spacing:-.06em;
       color:var(--navy);
+      margin-bottom:18px;
       max-width:11ch;
     }
     .hero h1 em{
@@ -276,10 +271,10 @@
       color:var(--blue);
     }
     .hero .lead{
-      margin:0 0 22px;
       font-size:1.08rem;
       color:var(--muted);
       max-width:620px;
+      margin-bottom:22px;
     }
     .hero-actions{
       display:flex;
@@ -297,32 +292,63 @@
       display:inline-flex;
       align-items:center;
       gap:8px;
-      padding:9px 14px;
+      padding:10px 14px;
       border-radius:999px;
-      background:rgba(255,255,255,.80);
-      border:1px solid rgba(11,31,77,.08);
+      background:rgba(255,255,255,.82);
+      border:1px solid rgba(7,26,58,.08);
       color:#27405d;
-      font-weight:600;
+      font-weight:700;
       font-size:.9rem;
-      box-shadow:0 8px 20px rgba(11,31,77,.05);
+      box-shadow:0 8px 20px rgba(7,26,58,.05);
     }
     .pill::before{
       content:"";
-      width:8px;height:8px;border-radius:50%;
+      width:8px;height:8px;
+      border-radius:50%;
       background:linear-gradient(135deg, var(--blue), var(--green));
       box-shadow:0 0 0 4px rgba(47,111,237,.08);
     }
 
     .hero-panel{
       padding:22px;
-      border-radius:28px;
-      background:linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(248,250,255,.78) 100%);
-      border:1px solid rgba(11,31,77,.08);
+      border-radius:30px;
+      background:linear-gradient(180deg, rgba(255,255,255,.94) 0%, rgba(248,250,255,.82) 100%);
+      border:1px solid rgba(7,26,58,.08);
       box-shadow:var(--shadow);
+    }
+    .hero-grid-right{
+      display:grid;
+      gap:14px;
+    }
+    .hero-photo{
+      border-radius:24px;
+      overflow:hidden;
+      min-height:250px;
+      background:#dbe7ff;
+      position:relative;
+      box-shadow:0 18px 38px rgba(7,26,58,.10);
+    }
+    .hero-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      min-height:250px;
+    }
+    .photo-badge{
+      position:absolute;
+      left:18px;
+      bottom:18px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(7,26,58,.84);
+      color:#fff;
+      font-size:.82rem;
+      font-weight:800;
+      backdrop-filter:blur(10px);
     }
     .hero-stack{
       display:grid;
-      gap:14px;
+      gap:12px;
     }
     .stack-card{
       display:flex;
@@ -330,13 +356,13 @@
       padding:18px;
       border-radius:20px;
       background:#fff;
-      border:1px solid rgba(11,31,77,.08);
-      transition:transform .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
+      border:1px solid rgba(7,26,58,.08);
+      transition:transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
     }
     .stack-card:hover{
       transform:translateY(-3px);
-      border-color:rgba(47,111,237,.20);
-      box-shadow:0 18px 34px rgba(11,31,77,.08);
+      border-color:rgba(47,111,237,.18);
+      box-shadow:0 18px 34px rgba(7,26,58,.08);
     }
     .icon{
       width:46px;height:46px;
@@ -345,24 +371,22 @@
       display:grid;
       place-items:center;
       background:linear-gradient(135deg, rgba(47,111,237,.12), rgba(26,122,76,.10));
-      color:var(--navy);
       font-size:1.15rem;
     }
     .stack-card h3{margin:0 0 4px;font-size:1rem;color:var(--navy)}
     .stack-card p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
     .hero-aside{
-      margin-top:18px;
       padding:18px;
       border-radius:22px;
-      background:linear-gradient(135deg, rgba(11,31,77,.98) 0%, rgba(7,26,58,.98) 100%);
+      background:linear-gradient(135deg, var(--navy) 0%, #081c41 100%);
       color:#fff;
-      box-shadow:0 24px 50px rgba(11,31,77,.25);
+      box-shadow:0 24px 50px rgba(7,26,58,.24);
     }
     .hero-aside h3{margin:0 0 6px;font-size:1.08rem}
-    .hero-aside p{margin:0;color:rgba(255,255,255,.76);font-size:.92rem;line-height:1.6}
+    .hero-aside p{margin:0;color:rgba(255,255,255,.78);font-size:.92rem;line-height:1.6}
 
     section{padding:82px 0}
-    .light{background:rgba(255,255,255,.44)}
+    .light{background:rgba(255,255,255,.42)}
     .dark{
       background:
         radial-gradient(circle at top right, rgba(47,111,237,.18), transparent 28%),
@@ -377,20 +401,30 @@
     }
     .metric{
       padding:24px;
-      border-radius:22px;
+      border-radius:24px;
       background:#fff;
-      border:1px solid rgba(11,31,77,.08);
+      border:1px solid rgba(7,26,58,.08);
       box-shadow:var(--shadow2);
+      position:relative;
+      overflow:hidden;
+    }
+    .metric::after{
+      content:"";
+      position:absolute;
+      inset:auto -24px -24px auto;
+      width:120px;height:120px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(47,111,237,.10), transparent 62%);
     }
     .metric strong{
       display:block;
       margin-bottom:8px;
       font-size:2rem;
-      letter-spacing:-.04em;
       line-height:1;
+      letter-spacing:-.04em;
       color:var(--navy);
     }
-    .metric span{color:var(--muted);font-weight:600}
+    .metric span{color:var(--muted);font-weight:700}
 
     .why-grid,.services-grid,.industry-grid,.testimonial-grid{
       display:grid;
@@ -400,7 +434,7 @@
     .why,.svc,.industry,.testimonial,.process,.contact-card,.contact-form{
       padding:24px;
       border-radius:24px;
-      border:1px solid rgba(11,31,77,.08);
+      border:1px solid rgba(7,26,58,.08);
       background:rgba(255,255,255,.88);
       box-shadow:var(--shadow2);
       transition:transform .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
@@ -408,7 +442,7 @@
     .why:hover,.svc:hover,.industry:hover,.testimonial:hover,.process:hover,.contact-card:hover,.contact-form:hover{
       transform:translateY(-4px);
       border-color:rgba(47,111,237,.22);
-      box-shadow:0 24px 44px rgba(11,31,77,.12);
+      box-shadow:0 24px 44px rgba(7,26,58,.12);
     }
     .top{
       display:flex;
@@ -420,23 +454,22 @@
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      min-width:58px;
+      min-width:64px;
       padding:8px 12px;
       border-radius:999px;
       background:rgba(47,111,237,.10);
       color:var(--blue);
       font-weight:900;
-      font-size:.76rem;
+      font-size:.74rem;
       letter-spacing:.08em;
       text-transform:uppercase;
     }
     .why h3,.svc h3,.industry h3,.testimonial h4,.process h3,.contact-card h3,.contact-form h3{
-      margin:0;
       color:var(--navy);
       font-size:1.08rem;
       line-height:1.2;
     }
-    .why p,.svc p,.industry p,.testimonial p,.process p,.contact-card p,.contact-form p{margin:0;color:var(--muted)}
+    .why p,.svc p,.industry p,.testimonial p,.process p,.contact-card p,.contact-form p{color:var(--muted)}
 
     .industry .title{
       display:flex;
@@ -454,6 +487,10 @@
       font-size:1.2rem;
     }
     .industry strong{display:block;color:var(--navy);margin-bottom:6px}
+    .industry{
+      display:block;
+      min-height:100%;
+    }
 
     .process-grid{
       display:grid;
@@ -461,15 +498,15 @@
       gap:18px;
     }
     .step-num{
-      width:54px;height:54px;
+      width:56px;height:56px;
       border-radius:18px;
       display:grid;
       place-items:center;
       background:linear-gradient(135deg, var(--navy), #1748a2);
       color:#fff;
-      font-weight:800;
+      font-weight:900;
       margin-bottom:14px;
-      box-shadow:0 16px 26px rgba(11,31,77,.18);
+      box-shadow:0 16px 26px rgba(7,26,58,.18);
     }
 
     .testimonial p{
@@ -485,7 +522,38 @@
     .testimonial span{
       color:var(--muted);
       font-size:.88rem;
-      font-weight:600;
+      font-weight:700;
+    }
+
+    .livebar{
+      padding:18px 0 0;
+    }
+    .livechip{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      width:max-content;
+      margin:0 auto 18px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid rgba(7,26,58,.08);
+      box-shadow:0 10px 20px rgba(7,26,58,.05);
+      color:var(--navy);
+      font-weight:800;
+      font-size:.9rem;
+    }
+    .pulse{
+      width:10px;height:10px;
+      border-radius:50%;
+      background:#24c16f;
+      box-shadow:0 0 0 0 rgba(36,193,111,.34);
+      animation:pulse 2s infinite;
+    }
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(36,193,111,.34)}
+      70%{box-shadow:0 0 0 12px rgba(36,193,111,0)}
+      100%{box-shadow:0 0 0 0 rgba(36,193,111,0)}
     }
 
     .about-grid,.contact-grid{
@@ -495,18 +563,18 @@
       align-items:start;
     }
     .about-copy h2,.contact-copy h2{
-      margin:0 0 14px;
       font-family:Fraunces,serif;
       font-size:clamp(2rem,4vw,3rem);
       line-height:1.05;
       letter-spacing:-.04em;
+      margin:0 0 14px;
       color:var(--navy);
     }
     .about-copy p,.contact-copy p{
-      color:var(--muted);
       margin:0 0 14px;
-      max-width:640px;
       font-size:1.01rem;
+      color:var(--muted);
+      max-width:640px;
     }
     .checklist{
       display:grid;
@@ -523,7 +591,7 @@
       background:rgba(47,111,237,.06);
       border:1px solid rgba(47,111,237,.10);
       color:var(--navy);
-      font-weight:600;
+      font-weight:700;
     }
     .check::before{
       content:"✓";
@@ -537,7 +605,7 @@
       background:
         radial-gradient(circle at top right, rgba(47,111,237,.12), transparent 28%),
         linear-gradient(180deg, #fff 0%, #f8fbff 100%);
-      border:1px solid rgba(11,31,77,.08);
+      border:1px solid rgba(7,26,58,.08);
       box-shadow:var(--shadow);
     }
     .founder-head{
@@ -549,18 +617,19 @@
     .avatar{
       width:74px;height:74px;border-radius:24px;
       background:linear-gradient(135deg, var(--navy), #13459c);
-      display:grid;place-items:center;
+      display:grid;
+      place-items:center;
       color:#fff;
       font-family:Fraunces,serif;
       font-size:2rem;
-      box-shadow:0 18px 30px rgba(11,31,77,.18);
+      box-shadow:0 18px 30px rgba(7,26,58,.18);
     }
     .founder h3{margin:0;color:var(--navy);font-size:1.2rem}
-    .founder small{display:block;color:var(--muted);font-weight:600;margin-top:4px}
+    .founder small{display:block;color:var(--muted);font-weight:700;margin-top:4px}
     .quote{
       margin-top:16px;
       padding-top:16px;
-      border-top:1px solid rgba(11,31,77,.08);
+      border-top:1px solid rgba(7,26,58,.08);
       font-family:Fraunces,serif;
       font-size:1.08rem;
       line-height:1.7;
@@ -579,13 +648,16 @@
       padding:14px 16px;
       border-radius:18px;
       background:rgba(255,255,255,.72);
-      border:1px solid rgba(11,31,77,.08);
+      border:1px solid rgba(7,26,58,.08);
     }
     .detail .ico{
       width:40px;height:40px;border-radius:14px;
       display:grid;place-items:center;
       background:linear-gradient(135deg, rgba(47,111,237,.12), rgba(26,122,76,.10));
+      flex:0 0 auto;
     }
+    .detail strong{display:block;color:var(--navy)}
+    .muted{color:var(--muted)}
     .contact-cta{
       display:flex;
       flex-wrap:wrap;
@@ -604,14 +676,14 @@
     label{
       display:block;
       font-size:.82rem;
-      font-weight:800;
-      letter-spacing:.02em;
+      font-weight:900;
       margin-bottom:6px;
       color:var(--navy);
+      letter-spacing:.02em;
     }
     .field{
       width:100%;
-      border:1px solid rgba(11,31,77,.12);
+      border:1px solid rgba(7,26,58,.12);
       border-radius:14px;
       padding:13px 14px;
       background:#fff;
@@ -630,15 +702,43 @@
       border-radius:16px;
       background:linear-gradient(135deg, var(--navy) 0%, #1748a2 100%);
       color:#fff;
-      font-weight:800;
+      font-weight:900;
       cursor:pointer;
-      box-shadow:0 18px 34px rgba(11,31,77,.18);
+      box-shadow:0 18px 34px rgba(7,26,58,.18);
     }
     .privacy{margin-top:4px;font-size:.76rem;color:var(--muted)}
 
+    .roles-section{
+      background:#f0f4ff;
+    }
+    .roles-cloud{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      max-width:930px;
+      margin:0 auto;
+    }
+    .role-pill{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 18px;
+      font-size:.88rem;
+      font-weight:800;
+      color:var(--navy);
+      transition:background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease), transform .2s var(--ease);
+    }
+    .role-pill:hover{
+      background:var(--blue);
+      border-color:var(--blue);
+      color:#fff;
+      transform:translateY(-1px);
+    }
+
     footer{
       padding:44px 0 28px;
-      border-top:1px solid rgba(11,31,77,.08);
+      border-top:1px solid rgba(7,26,58,.08);
       background:rgba(255,255,255,.45);
     }
     .footer-grid{
@@ -654,12 +754,12 @@
       color:var(--navy);
     }
     .footer p,.footer a,.footer li{color:var(--muted);font-size:.92rem}
-    .footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .footer ul{list-style:none;display:grid;gap:10px}
     .footer a:hover{color:var(--blue)}
     .footer-bottom{
       margin-top:28px;
       padding-top:18px;
-      border-top:1px solid rgba(11,31,77,.08);
+      border-top:1px solid rgba(7,26,58,.08);
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -713,53 +813,40 @@
     .dark .process h3,
     .dark .contact-card h3,
     .dark .contact-form h3{color:#fff}
-    .dark .muted,
-    .dark p{color:rgba(255,255,255,.76)}
-
-    .roles-section{
-      background:#f0f4ff;
+    .dark .metric span,
+    .dark .why p,
+    .dark .svc p,
+    .dark .industry p,
+    .dark .testimonial p,
+    .dark .process p,
+    .dark .contact-card p,
+    .dark .contact-form p{color:rgba(255,255,255,.76)}
+    .dark .detail{
+      background:rgba(255,255,255,.06);
+      border-color:rgba(255,255,255,.12);
     }
-    .roles-cloud{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:center;
-      max-width:900px;
-      margin:0 auto;
-    }
-    .role-pill{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:8px 18px;
-      font-size:.88rem;
-      font-weight:700;
+    .dark .detail strong,.dark .founder h3,.dark .quote{color:#fff}
+    .dark .muted{color:rgba(255,255,255,.72)}
+    .dark .field{
+      background:rgba(255,255,255,.96);
       color:var(--navy);
-      transition:background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease), transform .2s var(--ease);
-    }
-    .role-pill:hover{
-      background:var(--blue);
-      border-color:var(--blue);
-      color:#fff;
-      transform:translateY(-1px);
     }
 
     @media (max-width:1100px){
       .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-      .hero h1{max-width:none}
       .metrics,.why-grid,.services-grid,.industry-grid,.testimonial-grid{grid-template-columns:repeat(2,1fr)}
       .process-grid{grid-template-columns:repeat(2,1fr)}
       .footer-grid{grid-template-columns:1fr 1fr}
+      .hero h1{max-width:none}
     }
     @media (max-width:780px){
       .nav-links,.nav-actions .btn-outline,.nav-actions .btn-wa{display:none}
       .menu-toggle{display:flex}
-      .hero{padding-top:44px}
-      .hero h1{font-size:clamp(2.45rem,11vw,4.1rem)}
+      .hero{padding-top:42px}
+      .hero h1{font-size:clamp(2.4rem,11vw,4.2rem)}
       .hero-actions{flex-direction:column;align-items:stretch}
       .hero-actions .btn{width:100%}
-      .row,.checklist,.mobile-nav .cta-row{grid-template-columns:1fr}
-      .metrics,.why-grid,.services-grid,.industry-grid,.testimonial-grid,.process-grid,.footer-grid{grid-template-columns:1fr}
+      .mobile-nav .cta-row,.row,.checklist,.metrics,.why-grid,.services-grid,.industry-grid,.testimonial-grid,.process-grid,.footer-grid{grid-template-columns:1fr}
       section{padding:66px 0}
     }
   </style>
@@ -773,7 +860,7 @@
         <img src="E9658EC4-E4D4-4B67-BDD7-44C376507743.PNG" alt="HireX Consultancy">
       </a>
 
-      <div class="nav-links" aria-label="Primary navigation">
+      <div class="nav-links">
         <a href="#why">Why HireX</a>
         <a href="#industries">Industries</a>
         <a href="#services">Services</a>
@@ -783,7 +870,7 @@
       </div>
 
       <div class="nav-actions">
-        <a href="https://wa.me/918200438098?text=Hi%20I%20want%20to%20connect%20with%20HireX%20Consultancy." class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/918200438098" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
         <a href="#contact" class="btn btn-primary">Start a search</a>
       </div>
 
@@ -801,7 +888,7 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <div class="cta-row">
-          <a href="https://wa.me/918200438098?text=Hi%20I%20want%20to%20connect%20with%20HireX%20Consultancy." class="btn btn-wa" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://wa.me/918200438098" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp</a>
           <a href="#contact" class="btn btn-primary">Start a search</a>
         </div>
       </div>
@@ -812,33 +899,35 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="reveal">
-          <div class="eyebrow">Pan-India Recruitment Consultancy</div>
-          <h1>Connecting exceptional talent with <em>growing businesses</em></h1>
-          <p class="lead">HireX Consultancy delivers recruitment solutions across India — permanent, executive, and contract hiring with pre-screened candidates, fast turnaround, and personal support.</p>
+          <div class="eyebrow">Our Job Is Your Job</div>
+          <h1>Hire better.<br><em>Move faster.</em></h1>
+          <p class="lead">HireX Consultancy is a premium recruitment agency built to connect great companies with the right people across India. We support employers and job seekers with sharper hiring, real guidance, and human-first communication.</p>
 
           <div class="hero-points">
             <span class="pill">Pre-screened profiles</span>
+            <span class="pill">Pan-India reach</span>
+            <span class="pill">WhatsApp support</span>
             <span class="pill">Fast shortlists</span>
-            <span class="pill">WhatsApp-first support</span>
-            <span class="pill">9 industries covered</span>
           </div>
 
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Hire talent</a>
             <a href="https://wa.me/918200438098?text=Hi%20I'm%20looking%20for%20a%20job%20and%20want%20to%20connect%20with%20HireX%20Consultancy." class="btn btn-wa" target="_blank" rel="noopener">Job seekers WhatsApp us</a>
           </div>
+
+          <div class="livebar">
+            <div class="livechip"><span class="pulse"></span>Live hiring activity</div>
+          </div>
         </div>
 
-        <div class="reveal">
+        <div class="reveal hero-grid-right">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Professional team collaboration">
+            <div class="photo-badge">Trusted recruitment partner</div>
+          </div>
+
           <div class="hero-panel">
             <div class="hero-stack">
-              <div class="stack-card">
-                <div class="icon">↗</div>
-                <div>
-                  <h3>Pan-India talent network</h3>
-                  <p>Active candidate pipeline across all major cities and states.</p>
-                </div>
-              </div>
               <div class="stack-card">
                 <div class="icon">⚡</div>
                 <div>
@@ -849,20 +938,20 @@
               <div class="stack-card">
                 <div class="icon">✓</div>
                 <div>
-                  <h3>100% pre-screened candidates</h3>
+                  <h3>100% screened candidates</h3>
                   <p>Every profile vetted for skills, experience, and intent before it reaches you.</p>
                 </div>
               </div>
               <div class="stack-card">
                 <div class="icon">◎</div>
                 <div>
-                  <h3>Speak to a person, not a portal</h3>
+                  <h3>Real people, real support</h3>
                   <p>Dedicated consultant on every search reachable on call and WhatsApp.</p>
                 </div>
               </div>
             </div>
 
-            <div class="hero-aside">
+            <div class="hero-aside" style="margin-top:12px">
               <h3>Recruitment built for results, not activity</h3>
               <p>We don’t flood your inbox with resumes. We send you the right people, faster — with sector-specific hiring expertise and end-to-end support.</p>
             </div>
@@ -875,14 +964,15 @@
       <div class="wrap">
         <div class="section-head reveal">
           <div class="eyebrow">Proof</div>
-          <h2>High-trust hiring, presented with clarity</h2>
-          <p>Clear hierarchy, strong proof, and a premium feel make the homepage easier to scan and more persuasive from the first screen onward.</p>
+          <h2>Live numbers that make the experience feel active</h2>
+          <p>The counters below create momentum and help visitors immediately understand the scale of your hiring activity.</p>
         </div>
+
         <div class="metrics">
-          <div class="metric reveal"><strong>5000+</strong><span>Candidate database</span></div>
-          <div class="metric reveal"><strong>200+</strong><span>Successful closures</span></div>
-          <div class="metric reveal"><strong>48h</strong><span>Average shortlisting</span></div>
-          <div class="metric reveal"><strong>9+</strong><span>Industries served</span></div>
+          <div class="metric reveal"><strong class="counter" data-target="5000">0</strong><span>Candidate database</span></div>
+          <div class="metric reveal"><strong class="counter" data-target="200">0</strong><span>Successful closures</span></div>
+          <div class="metric reveal"><strong class="counter" data-target="48">0</strong><span>Hours to shortlist</span></div>
+          <div class="metric reveal"><strong class="counter" data-target="9">0</strong><span>Industries served</span></div>
         </div>
       </div>
     </section>
@@ -908,7 +998,7 @@
     <section id="industries" class="dark">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="eyebrow">Sectors we serve</div>
+          <div class="eyebrow">Industry matrix</div>
           <h2>9 industries. One recruitment partner.</h2>
           <p>Dedicated hiring expertise across the sectors that power India’s economy.</p>
         </div>
@@ -1009,7 +1099,7 @@
           <p>A structured process that moves quickly without cutting corners for employers and candidates alike.</p>
         </div>
         <div class="process-grid">
-          <div class="process reveal"><div class="step-num">01</div><h3>Understand the role</h3><p>We learn the responsibilities, team dynamics, compensation range, and what right fit truly means for this hire.</p></div>
+          <div class="process reveal"><div class="step-num">01</div><h3>Understand the role</h3><p>We learn responsibilities, team dynamics, compensation range, and what right fit truly means for the hire.</p></div>
           <div class="process reveal"><div class="step-num">02</div><h3>Source & screen</h3><p>We tap our network and run targeted outreach to identify candidates, then screen for skills, experience, and genuine interest.</p></div>
           <div class="process reveal"><div class="step-num">03</div><h3>Shortlist & interview</h3><p>You meet only candidates who have been fully vetted. No resume floods, no wasted interview slots.</p></div>
           <div class="process reveal"><div class="step-num">04</div><h3>Offer & onboard support</h3><p>We manage offer letters, negotiations, and the joining handover so both sides transition smoothly.</p></div>
@@ -1020,7 +1110,7 @@
     <section class="light">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="eyebrow">Client testimonials</div>
+          <div class="eyebrow">Testimonials</div>
           <h2>What our clients say</h2>
           <p>Trusted by companies across multiple industries across India.</p>
         </div>
@@ -1039,9 +1129,9 @@
       <div class="wrap about-grid">
         <div class="about-copy reveal">
           <div class="eyebrow">Who we are</div>
-          <h2>Recruitment built on real expertise, not algorithms</h2>
-          <p>HireX Consultancy was founded by professionals with deep experience in sales, financial services, and business development — people who understand what it takes to build high-performing teams from the ground up.</p>
-          <p>We started with a simple conviction: every hire matters. A wrong fit costs time, money, and momentum. A right one changes the trajectory of a team and a career. That’s why we treat every search with the attention it deserves.</p>
+          <h2>Recruitment built on real expertise, not templates</h2>
+          <p>HireX Consultancy was built by people who understand how teams grow, how hiring decisions affect businesses, and how important it is to make every role count.</p>
+          <p>We started with a simple conviction: every hire matters. A wrong fit costs time, money, and momentum. A right one changes the trajectory of a team and a career.</p>
           <p>When you work with us, you speak to a person — not a portal, not a chatbot, not an automated system. We’re reachable on call and WhatsApp throughout the process.</p>
 
           <div class="checklist">
@@ -1231,13 +1321,36 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('revealed'), i * 35);
+          setTimeout(() => entry.target.classList.add('revealed'), i * 40);
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12 });
-
     reveals.forEach(el => observer.observe(el));
+
+    const counters = document.querySelectorAll('.counter');
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1400;
+        const start = performance.now();
+        function tick(now){
+          const progress = Math.min((now - start) / duration, 1);
+          const value = Math.floor(progress * target);
+          el.textContent = value.toLocaleString();
+          if(progress < 1) requestAnimationFrame(tick);
+          else if(target === 48) el.textContent = '48h';
+          else if(target === 9) el.textContent = '9+';
+          else if(target === 200) el.textContent = '200+';
+          else if(target === 5000) el.textContent = '5,000+';
+        }
+        requestAnimationFrame(tick);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => countObserver.observe(el));
 
     document.getElementById('hirexForm').addEventListener('submit', function(e){
       e.preventDefault();
