@@ -69,6 +69,7 @@
   h1, h2, h3, h4 { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: -0.01em; }
   .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 
+  /* ─── HEADER ─── */
   header {
     position: sticky; top: 0; z-index: 50;
     background: rgba(247,249,252,0.96);
@@ -83,6 +84,7 @@
   .nav-links { display: flex; gap: 28px; font-size: 0.92rem; font-weight: 500; }
   .nav-links a { padding: 4px 0; transition: color 0.2s; }
   .nav-links a:hover { color: var(--brass); }
+  .nav-links a:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 2px; }
   .nav-right { display: flex; align-items: center; gap: 12px; }
   .nav-wa {
     display: flex; align-items: center; gap: 7px;
@@ -98,6 +100,7 @@
   }
   .nav-cta:hover { background: var(--brass); }
 
+  /* MOBILE MENU */
   .menu-toggle {
     display: none; flex-direction: column; gap: 5px;
     cursor: pointer; background: none; border: none; padding: 6px; z-index: 60;
@@ -133,6 +136,7 @@
     display: block;
   }
 
+  /* ─── HERO ─── */
   .hero { padding: 88px 24px 100px; position: relative; }
   .hero-inner { max-width: 1180px; margin: 0 auto; }
   .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
@@ -174,6 +178,7 @@
   .btn-wa { background: #25D366; color: white; display: flex; align-items: center; gap: 8px; }
   .btn-wa:hover { transform: translateY(-2px); opacity: 0.92; }
 
+  /* Hero right: trust card stack */
   .hero-right { position: relative; }
   .trust-stack { display: flex; flex-direction: column; gap: 16px; }
   .trust-card {
@@ -197,12 +202,14 @@
   .trust-badge h4 { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1rem; margin-bottom: 2px; }
   .trust-badge p { font-size: 0.82rem; color: rgba(247,249,252,0.7); }
 
+  /* ─── SECTION COMMON ─── */
   section { padding: 80px 0; }
   .section-head { max-width: 620px; margin: 0 auto 52px; text-align: center; }
   .section-head .eyebrow { margin-bottom: 12px; }
   .section-head h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); margin-bottom: 12px; }
   .section-head p { color: var(--slate); font-size: 0.97rem; }
 
+  /* ─── WHY HIREX ─── */
   .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
   .why-card {
     background: white; border: 1px solid var(--line); border-radius: 8px; padding: 32px 28px;
@@ -213,6 +220,7 @@
   .why-card h3 { font-size: 1.05rem; margin-bottom: 8px; font-family: 'Inter', sans-serif; font-weight: 600; }
   .why-card p { font-size: 0.88rem; color: var(--slate); line-height: 1.65; }
 
+  /* ─── INDUSTRIES ─── */
   .industries { background: var(--navy); padding: 80px 0; }
   .industries .section-head h2 { color: white; }
   .industries .section-head p { color: var(--text-muted); }
@@ -222,17 +230,19 @@
     display: block;
     text-decoration: none;
     color: inherit;
+   
     border: 1px solid rgba(247,249,252,0.12);
     border-radius: 8px;
     padding: 24px 20px;
     transition: background 0.2s, border-color 0.2s;
     cursor: pointer;
-  }
+}
   .ind-card:hover { background: rgba(47,111,237,0.15); border-color: rgba(47,111,237,0.5); }
   .ind-card .iicon { font-size: 1.6rem; margin-bottom: 12px; display: block; }
   .ind-card h3 { font-size: 1rem; color: white; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-weight: 600; }
   .ind-card p { font-size: 0.82rem; color: rgba(247,249,252,0.6); line-height: 1.6; }
 
+  /* ─── SERVICES ─── */
   .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
   .svc-card {
     background: white; border: 1px solid var(--line); border-radius: 8px; padding: 32px 28px;
@@ -248,6 +258,7 @@
   .svc-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
   .svc-card p { font-size: 0.88rem; color: var(--slate); line-height: 1.65; }
 
+  /* ─── ROLES WE PLACE ─── */
   .roles-section { background: #F0F4FF; }
   .roles-cloud { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 860px; margin: 0 auto; }
   .role-pill {
@@ -257,6 +268,7 @@
   }
   .role-pill:hover { background: var(--brass); border-color: var(--brass); color: white; }
 
+  /* ─── PROCESS ─── */
   .process-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; }
   .process-grid::before {
     content: ''; position: absolute; top: 36px; left: 12.5%; right: 12.5%; height: 1px;
@@ -272,6 +284,7 @@
   .proc-step h4 { font-size: 1rem; margin-bottom: 8px; font-family: 'Inter', sans-serif; font-weight: 600; }
   .proc-step p { font-size: 0.85rem; color: var(--slate); line-height: 1.6; }
 
+  /* ─── ABOUT / FOUNDER ─── */
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
   .about-text-side .eyebrow { margin-bottom: 12px; }
   .about-text-side h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); margin-bottom: 16px; }
@@ -304,6 +317,7 @@
   .pillar .pcheck { color: var(--brass); font-size: 1rem; margin-top: 1px; flex-shrink: 0; }
   .pillar p { font-size: 0.85rem; font-weight: 500; color: var(--navy); }
 
+  /* ─── CONTACT ─── */
   .contact-section { background: var(--navy); color: var(--ivory); padding: 80px 0; }
   .contact-inner {
     max-width: 1180px; margin: 0 auto; padding: 0 24px;
@@ -363,38 +377,47 @@
   .form-success .tick { font-size: 2.4rem; margin-bottom: 10px; }
   .form-success h4 { font-size: 1.1rem; margin-bottom: 6px; color: var(--navy); }
   .form-success p { color: var(--slate); font-size: 0.9rem; }
+/* ---------- TESTIMONIALS ---------- */
 
-  .testimonials{ background:#fff; }
-  .testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:24px;
-  }
-  .testimonial{
-    background:white;
-    padding:24px;
-    border-radius:8px;
-    border:1px solid var(--line);
-    transition:0.3s;
-  }
-  .testimonial:hover{
-    transform:translateY(-5px);
-    border-color:var(--brass);
-  }
-  .testimonial p{
-    color:var(--slate);
-    font-style:italic;
-    margin-bottom:16px;
-  }
-  .testimonial h4{
-    margin:0;
-    color:var(--navy);
-  }
-  .testimonial span{
-    font-size:0.85rem;
-    color:var(--slate);
-  }
+.testimonials{
+  background:#fff;
+}
 
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:24px;
+}
+
+.testimonial{
+  background:white;
+  padding:24px;
+  border-radius:8px;
+  border:1px solid var(--line);
+  transition:0.3s;
+}
+
+.testimonial:hover{
+  transform:translateY(-5px);
+  border-color:var(--brass);
+}
+
+.testimonial p{
+  color:var(--slate);
+  font-style:italic;
+  margin-bottom:16px;
+}
+
+.testimonial h4{
+  margin:0;
+  color:var(--navy);
+}
+
+.testimonial span{
+  font-size:0.85rem;
+  color:var(--slate);
+}
+  /* ─── FOOTER ─── */
   footer { padding: 52px 24px 28px; border-top: 1px solid var(--line); }
   .footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 40px; }
   .footer-brand p { color: var(--slate); font-size: 0.88rem; max-width: 280px; line-height: 1.65; margin-top: 10px; }
@@ -414,6 +437,7 @@
     border-top: 1px solid var(--line); font-size: 0.82rem; color: var(--slate);
   }
 
+  /* ─── WHATSAPP FLOAT ─── */
   .wa-float {
     position: fixed; bottom: 24px; right: 24px; z-index: 999;
     background: #25D366; color: white; border-radius: 50%;
@@ -429,32 +453,35 @@
     transition: opacity 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
   .wa-float:hover .wa-float-label { opacity: 1; }
+.stats-section{
+padding:40px 0;
+background:white;
+}
 
-  .stats-section{
-    padding:40px 0;
-    background:white;
-  }
-  .stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-  }
-  .stat-box{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    text-align:center;
-    border:1px solid var(--line);
-  }
-  .stat-box h3{
-    font-size:36px;
-    color:var(--brass);
-  }
-  .stat-box p{
-    margin-top:5px;
-    color:var(--slate);
-  }
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
 
+.stat-box{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+border:1px solid var(--line);
+}
+
+.stat-box h3{
+font-size:36px;
+color:var(--brass);
+}
+
+.stat-box p{
+margin-top:5px;
+color:var(--slate);
+}
+  /* ─── RESPONSIVE ─── */
   @media (max-width: 980px) {
     .services-grid { grid-template-columns: repeat(2,1fr); }
     .ind-grid { grid-template-columns: repeat(2,1fr); }
@@ -487,11 +514,13 @@
 </head>
 <body>
 
+<!-- ─── WHATSAPP FLOAT ─── -->
 <a href="https://wa.me/918200438098?text=Hi%2C%20I%20found%20HireX%20Consultancy%20online%20and%20wanted%20to%20connect." class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <span class="wa-float-label">Chat on WhatsApp</span>
   💬
 </a>
 
+<!-- ─── HEADER ─── -->
 <header>
   <nav class="nav">
     <a href="#top" class="logo">
@@ -527,29 +556,36 @@
 
 <main id="top">
 
+  <!-- ─── HERO ─── -->
   <section class="stats-section">
-    <div class="wrap">
-      <div class="stats-grid">
-        <div class="stat-box">
-          <h3>5000+</h3>
-          <p>Candidate Database</p>
-        </div>
-        <div class="stat-box">
-          <h3>200+</h3>
-          <p>Successful Closures</p>
-        </div>
-        <div class="stat-box">
-          <h3>48 Hours</h3>
-          <p>Average Shortlisting</p>
-        </div>
-        <div class="stat-box">
-          <h3>9+</h3>
-          <p>Industries Served</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="wrap">
 
+<div class="stats-grid">
+
+<div class="stat-box">
+<h3>5000+</h3>
+<p>Candidate Database</p>
+</div>
+
+<div class="stat-box">
+<h3>200+</h3>
+<p>Successful Closures</p>
+</div>
+
+<div class="stat-box">
+<h3>48 Hours</h3>
+<p>Average Shortlisting</p>
+</div>
+
+<div class="stat-box">
+<h3>9+</h3>
+<p>Industries Served</p>
+</div>
+
+</div>
+
+</div>
+</section>
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-grid">
@@ -618,6 +654,7 @@
     </div>
   </section>
 
+  <!-- ─── WHY HIREX ─── -->
   <section id="why" style="background: var(--white);">
     <div class="wrap">
       <div class="section-head">
@@ -660,6 +697,7 @@
     </div>
   </section>
 
+  <!-- ─── INDUSTRIES ─── -->
   <section class="industries" id="industries">
     <div class="wrap">
       <div class="section-head">
@@ -678,7 +716,7 @@
           <h3>BFSI</h3>
           <p>Relationship managers, branch managers, credit analysts, insurance advisors, and banking operations professionals.</p>
         </a>
-        <a href="manufacturing-jobs.html" class="ind-card">
+       <a href="manufacturing-jobs.html" class="ind-card">
           <span class="iicon">⚙️</span>
           <h3>Manufacturing</h3>
           <p>Plant heads, production supervisors, quality engineers, maintenance leads, and supply chain managers.</p>
@@ -717,6 +755,7 @@
     </div>
   </section>
 
+  <!-- ─── SERVICES ─── -->
   <section id="services">
     <div class="wrap">
       <div class="section-head">
@@ -759,6 +798,7 @@
     </div>
   </section>
 
+  <!-- ─── ROLES WE PLACE ─── -->
   <section class="roles-section">
     <div class="wrap">
       <div class="section-head">
@@ -798,6 +838,7 @@
     </div>
   </section>
 
+  <!-- ─── PROCESS ─── -->
   <section id="process" style="background: var(--white);">
     <div class="wrap">
       <div class="section-head">
@@ -829,54 +870,61 @@
       </div>
     </div>
   </section>
+<section class="testimonials">
+  <div class="wrap">
 
-  <section class="testimonials">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Client Testimonials</div>
-        <h2>What Our Clients Say</h2>
-        <p>Trusted by companies across multiple industries across India.</p>
-      </div>
-      <div class="testimonial-grid">
-        <div class="testimonial">
-          <p>"HireX Consultancy helped us close 3 critical sales positions within 10 days. The profiles were highly relevant and pre-screened."</p>
-          <h4>Alpesh Tailor</h4>
-          <span>Director, Real Estate Developer</span>
-        </div>
-        <div class="testimonial">
-          <p>"We struggled for weeks to find experienced Relationship Managers. HireX delivered quality candidates quickly and professionally."</p>
-          <h4>Rahul Shah</h4>
-          <span>Regional Manager, Housing Finance Company</span>
-        </div>
-        <div class="testimonial">
-          <p>"Professional, transparent and efficient. Their team stayed involved throughout the hiring process and ensured a smooth closure."</p>
-          <h4>Neha Desai</h4>
-          <span>Head HR, Logistics Company</span>
-        </div>
-        <div class="testimonial">
-          <p>"Excellent communication and quick turnaround. We hired two operations managers through HireX within three weeks."</p>
-          <h4>Karan Mehta</h4>
-          <span>Operations Head, Manufacturing Company</span>
-        </div>
-        <div class="testimonial">
-          <p>"Their understanding of the BFSI sector helped us find candidates who were productive from day one. Highly recommended."</p>
-          <h4>Priya Patel</h4>
-          <span>HR Manager, Financial Services Firm</span>
-        </div>
-        <div class="testimonial">
-          <p>"HireX Consultancy understood our hiring requirements immediately and shared quality profiles within days. The process was smooth and hassle-free."</p>
-          <h4>Vikas Sharma</h4>
-          <span>General Manager, Retail Chain</span>
-        </div>
-        <div class="testimonial">
-          <p>"We were hiring across multiple locations in Gujarat and HireX helped us close positions faster than any agency we had worked with before."</p>
-          <h4>Sneha Joshi</h4>
-          <span>Talent Acquisition Lead, Healthcare Group</span>
-        </div>
-      </div>
+    <div class="section-head">
+      <div class="section-tag">Client Testimonials</div>
+      <h2>What Our Clients Say</h2>
+      <p>Trusted by companies across multiple industries across India.</p>
     </div>
-  </section>
 
+    <div class="testimonial-grid">
+
+      <div class="testimonial">
+        <p>"HireX Consultancy helped us close 3 critical sales positions within 10 days. The profiles were highly relevant and pre-screened."</p>
+        <h4>Alpesh Tailor</h4>
+        <span>Director, Real Estate Developer</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"We struggled for weeks to find experienced Relationship Managers. HireX delivered quality candidates quickly and professionally."</p>
+        <h4>Rahul Shah</h4>
+        <span>Regional Manager, Housing Finance Company</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"Professional, transparent and efficient. Their team stayed involved throughout the hiring process and ensured a smooth closure."</p>
+        <h4>Neha Desai</h4>
+        <span>Head HR, Logistics Company</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"Excellent communication and quick turnaround. We hired two operations managers through HireX within three weeks."</p>
+        <h4>Karan Mehta</h4>
+        <span>Operations Head, Manufacturing Company</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"Their understanding of the BFSI sector helped us find candidates who were productive from day one. Highly recommended."</p>
+        <h4>Priya Patel</h4>
+        <span>HR Manager, Financial Services Firm</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"HireX Consultancy understood our hiring requirements immediately and shared quality profiles within days. The process was smooth and hassle-free."</p>
+        <h4>Vikas Sharma</h4>
+        <span>General Manager, Retail Chain</span>
+      </div>
+
+      <div class="testimonial">
+        <p>"We were hiring across multiple locations in Gujarat and HireX helped us close positions faster than any agency we had worked with before."</p>
+        <h4>Sneha Joshi</h4>
+        <span>Talent Acquisition Lead, Healthcare Group</span>
+      </div>
+
+</section>
+  <!-- ─── ABOUT / FOUNDER ─── -->
   <section id="about">
     <div class="wrap">
       <div class="about-grid">
@@ -932,6 +980,7 @@
     </div>
   </section>
 
+  <!-- ─── CONTACT ─── -->
   <section class="contact-section" id="contact">
     <div class="contact-inner">
       <div class="contact-left">
@@ -1029,6 +1078,7 @@
 
 </main>
 
+<!-- ─── FOOTER ─── -->
 <footer>
   <div class="wrap">
     <div class="footer-grid">
